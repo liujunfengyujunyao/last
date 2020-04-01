@@ -1,0 +1,2970 @@
+---------------------------------------------------------------
+[ 2019-10-23T15:07:41+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_add
+[运行时间：1.475187s] [吞吐率：0.68req/s] [内存消耗：2,738.75kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.037504s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.036005s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_add[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.069509s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT MAX(location) AS tp_max FROM `fa_machine_conf` WHERE  `machine_id` = 10088 LIMIT 1 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (1 , 10088 , 1571814461 , 1571814461 , '1.1' , '1.1') [ RunTime:0.001500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (2 , 10088 , 1571814461 , 1571814461 , '2.2' , '2.2') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (3 , 10088 , 1571814461 , 1571814461 , '3.3' , '3.3') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-23T15:07:41+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/favicon.ico
+[运行时间：0.069009s] [吞吐率：14.49req/s] [内存消耗：1,579.59kb] [文件加载：107]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.144:9999/api/test/machine_conf_add',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T15:08:02+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_add
+[运行时间：0.148519s] [吞吐率：6.73req/s] [内存消耗：2,739.04kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.027003s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_add[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.037504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT MAX(location) AS tp_max FROM `fa_machine_conf` WHERE  `machine_id` = 10088 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (4 , 10088 , 1571814482 , 1571814482 , '1.1' , '1.1') [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (5 , 10088 , 1571814482 , 1571814482 , '2.2' , '2.2') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (6 , 10088 , 1571814482 , 1571814482 , '3.3' , '3.3') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-23T15:08:21+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_add
+[运行时间：0.144018s] [吞吐率：6.94req/s] [内存消耗：2,739.04kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_add[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.055507s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT MAX(location) AS tp_max FROM `fa_machine_conf` WHERE  `machine_id` = 10099 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (1 , 10099 , 1571814501 , 1571814501 , '1.1' , '1.1') [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (2 , 10099 , 1571814501 , 1571814501 , '2.2' , '2.2') [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (3 , 10099 , 1571814501 , 1571814501 , '3.3' , '3.3') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-23T15:08:31+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_add
+[运行时间：0.145019s] [吞吐率：6.90req/s] [内存消耗：2,739.04kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_add[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.049506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.036504s ]
+[ sql ] [ SQL ] SELECT MAX(location) AS tp_max FROM `fa_machine_conf` WHERE  `machine_id` = 10088 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (7 , 10088 , 1571814511 , 1571814511 , '1.1' , '1.1') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (8 , 10088 , 1571814511 , 1571814511 , '2.2' , '2.2') [ RunTime:0.000501s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (9 , 10088 , 1571814511 , 1571814511 , '3.3' , '3.3') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-23T15:09:31+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_add
+[运行时间：0.102013s] [吞吐率：9.80req/s] [内存消耗：2,773.00kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_add[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.049007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T15:16:02+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_add
+[运行时间：0.128017s] [吞吐率：7.81req/s] [内存消耗：2,739.04kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_add[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.028503s ]
+[ sql ] [ SQL ] SELECT MAX(location) AS tp_max FROM `fa_machine_conf` WHERE  `machine_id` = 10088 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (10 , 10088 , 1571814962 , 1571814962 , '1.1' , '1.1') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (11 , 10088 , 1571814962 , 1571814962 , '2.2' , '2.2') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_machine_conf` (`location` , `machine_id` , `update_time` , `create_time` , `lat` , `lng`) VALUES (12 , 10088 , 1571814962 , 1571814962 , '3.3' , '3.3') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:26:18+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/goods_info/1.jpeg
+[运行时间：0.045506s] [吞吐率：21.98req/s] [内存消耗：1,579.72kb] [文件加载：107]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'goods_info',
+    1 => '1.jpeg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T16:26:24+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/public/goods_info/1.jpeg
+[运行时间：0.039005s] [吞吐率：25.64req/s] [内存消耗：1,579.74kb] [文件加载：107]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'goods_info',
+    2 => '1.jpeg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T16:26:27+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/public/goods_info/1.jpg
+[运行时间：0.031004s] [吞吐率：32.25req/s] [内存消耗：1,579.74kb] [文件加载：107]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'goods_info',
+    2 => '1.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T16:27:45+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.117015s] [吞吐率：8.55req/s] [内存消耗：2,707.05kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:28:30+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.086011s] [吞吐率：11.63req/s] [内存消耗：2,707.33kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:28:51+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.088512s] [吞吐率：11.30req/s] [内存消耗：2,707.33kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:28:51+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.082011s] [吞吐率：12.19req/s] [内存消耗：2,707.33kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:28:52+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.093512s] [吞吐率：10.69req/s] [内存消耗：2,707.33kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:28:53+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.126016s] [吞吐率：7.94req/s] [内存消耗：2,707.33kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000501s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.069508s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:28:56+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.101012s] [吞吐率：9.90req/s] [内存消耗：2,707.33kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.042505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:28:56+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.073510s] [吞吐率：13.60req/s] [内存消耗：2,707.33kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:28:57+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/machine_conf_edit
+[运行时间：0.120015s] [吞吐率：8.33req/s] [内存消耗：2,707.33kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->machine_conf_edit[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.069009s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:29:06+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/machine/machine_conf_edit
+[运行时间：0.167021s] [吞吐率：5.99req/s] [内存消耗：1,963.45kb] [文件加载：114]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Illegal offset type[D:\WWW\last\application\api\controller\Machine.php:354]
+---------------------------------------------------------------
+[ 2019-10-23T16:29:25+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/machine/machine_conf_edit
+[运行时间：0.175522s] [吞吐率：5.70req/s] [内存消耗：2,549.98kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.047506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.014502s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:29:34+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/machine/machine_conf_edit
+[运行时间：0.035004s] [吞吐率：28.57req/s] [内存消耗：2,150.05kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Machine->machine_conf_edit[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T16:29:46+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/machine/machine_conf_edit
+[运行时间：0.102013s] [吞吐率：9.80req/s] [内存消耗：2,773.59kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Machine->machine_conf_edit[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.038004s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_conf`  SET `lat`='10',`lng`='10'  WHERE  `id` = 11 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_conf`  SET `lat`='20',`lng`='20'  WHERE  `id` = 16 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:30:19+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/machine/machine_conf_list
+[运行时间：0.050506s] [吞吐率：19.80req/s] [内存消耗：2,779.28kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'machine_conf_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Machine->machine_conf_list[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: machine_id[D:\WWW\last\application\api\controller\Machine.php:338]
+---------------------------------------------------------------
+[ 2019-10-23T16:30:43+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/machine/machine_conf_list
+[运行时间：0.119515s] [吞吐率：8.37req/s] [内存消耗：2,803.18kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'machine_conf_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\api\controller\Machine->machine_conf_list[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.057008s ]
+[ sql ] [ SQL ] SELECT `id`,`lat`,`lng` FROM `fa_machine_conf` WHERE  `machine_id` = 10001 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-10-23T16:33:38+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/machine/machine_conf_edit
+[运行时间：0.035505s] [吞吐率：28.17req/s] [内存消耗：2,150.45kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'machine_conf_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Machine->machine_conf_edit[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:40:56+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.211527s] [吞吐率：4.73req/s] [内存消耗：2,650.97kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '56',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '9f2e1d50-7f60-44bb-a322-ad64952cbe85',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.028003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: O[D:\WWW\last\application\api\controller\Server.php:177]
+---------------------------------------------------------------
+[ 2019-10-23T18:44:13+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.063008s] [吞吐率：15.87req/s] [内存消耗：2,013.23kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '56',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '70af8fc0-8834-43c0-a2c4-e4e2a5b12fd6',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:44:44+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.076510s] [吞吐率：13.07req/s] [内存消耗：2,013.30kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.032504s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '67',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '967bc05b-6cd6-4f66-8847-b76ae1424040',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '1231',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:44:49+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.109014s] [吞吐率：9.17req/s] [内存消耗：2,651.56kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '67',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '5c66cac1-a1e5-4aab-9a15-fcb38ed57a82',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '1231',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.036004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: id[D:\WWW\last\application\api\controller\Server.php:187]
+---------------------------------------------------------------
+[ 2019-10-23T18:45:12+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.081510s] [吞吐率：12.27req/s] [内存消耗：2,651.59kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b2d6dffb-2596-4a34-85fd-0be701782f92',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: id[D:\WWW\last\application\api\controller\Server.php:187]
+---------------------------------------------------------------
+[ 2019-10-23T18:45:19+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.136017s] [吞吐率：7.35req/s] [内存消耗：2,612.02kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.036505s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'c6943735-4337-4f8b-a1ff-2feb4bdd00a1',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.041006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:45:24+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.092512s] [吞吐率：10.81req/s] [内存消耗：2,612.02kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f3abcbf1-0b71-45f5-a6f7-b262d1d1faf3',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:45:29+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.233530s] [吞吐率：4.28req/s] [内存消耗：2,651.59kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.022003s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'cc9d81da-dc5e-4e8b-92d2-b8db7ec5cfc7',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.091512s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.006501s ]
+[ error ] [8]未定义数组索引: id[D:\WWW\last\application\api\controller\Server.php:189]
+---------------------------------------------------------------
+[ 2019-10-23T18:45:38+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.084011s] [吞吐率：11.90req/s] [内存消耗：2,610.94kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'a503e5d7-f7c7-4326-944f-8d713a232f71',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.033505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:45:49+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.065008s] [吞吐率：15.38req/s] [内存消耗：1,808.50kb] [文件加载：113]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f3f8b96d-ba54-4079-8cc8-08ac9db42a0b',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION)[D:\WWW\last\application\api\controller\Server.php:244]
+---------------------------------------------------------------
+[ 2019-10-23T18:46:48+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.112514s] [吞吐率：8.89req/s] [内存消耗：2,646.20kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f916c300-6452-45ca-8e56-8b8973012d38',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.042505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: location[D:\WWW\last\application\api\controller\Server.php:196]
+---------------------------------------------------------------
+[ 2019-10-23T18:47:21+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.101013s] [吞吐率：9.90req/s] [内存消耗：2,646.23kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'ee109165-fd35-4207-9d3d-739601df951f',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.029004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: location[D:\WWW\last\application\api\controller\Server.php:196]
+---------------------------------------------------------------
+[ 2019-10-23T18:49:53+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.098012s] [吞吐率：10.20req/s] [内存消耗：2,646.20kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'ed7d15f2-8709-4d8b-a680-a6288db83019',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.051507s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: soft_version[D:\WWW\last\application\api\controller\Server.php:197]
+---------------------------------------------------------------
+[ 2019-10-23T18:50:56+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.094012s] [吞吐率：10.64req/s] [内存消耗：2,644.97kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.015002s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b9c0830d-88ec-41c4-8703-86ecdf726d28',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.025504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-10-23T18:51:13+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.094512s] [吞吐率：10.58req/s] [内存消耗：2,645.60kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'c051d507-e53e-43ce-bb01-b74314553a36',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.049006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-10-23T18:51:19+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.094512s] [吞吐率：10.58req/s] [内存消耗：2,645.60kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '877dc6c6-50d0-4002-8162-13b979f90c33',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.035505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-10-23T18:51:38+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.168521s] [吞吐率：5.93req/s] [内存消耗：2,647.57kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '6443ea29-3e5a-47a7-bbb9-13e3a5097e4c',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.122515s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: location[D:\WWW\last\application\api\controller\Server.php:196]
+---------------------------------------------------------------
+[ 2019-10-23T18:51:51+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.142018s] [吞吐率：7.04req/s] [内存消耗：2,644.27kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '154e6f5c-a4cb-46e5-a46b-212981ab6716',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`='北京',`soft_version`=NULL,`last_online`='1571827911',`is_online`=1  WHERE  `machine_id` IS NULL [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.050506s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: id[D:\WWW\last\application\api\controller\Server.php:241]
+---------------------------------------------------------------
+[ 2019-10-23T18:52:13+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.094011s] [吞吐率：10.64req/s] [内存消耗：2,608.48kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'ad15c8d8-478c-4cfe-a39a-b8a0043c0776',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.033504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:52:22+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.115514s] [吞吐率：8.66req/s] [内存消耗：2,604.66kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'cd058294-0c48-4668-8836-14bc211a6fb6',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.042505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`='北京',`soft_version`=NULL,`last_online`='1571827942',`is_online`=1  WHERE  `machine_id` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:52:31+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.133017s] [吞吐率：7.52req/s] [内存消耗：2,603.57kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '029cde7c-71e1-4235-ab76-0669397c736f',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.049007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`='北京',`soft_version`=NULL,`last_online`='1571827951',`is_online`=1  WHERE  `machine_id` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:54:05+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.149019s] [吞吐率：6.71req/s] [内存消耗：2,603.57kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '6eea8a19-b4c0-4ced-8591-2872e47d6744',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.049007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`='北京',`soft_version`=NULL,`last_online`='1571828045',`is_online`=1  WHERE  `machine_id` IS NULL [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:54:18+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.142518s] [吞吐率：7.02req/s] [内存消耗：2,604.66kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'e3f83bd2-52ac-4482-86f0-07c1f14a8327',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.048006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`='北京',`soft_version`=NULL,`last_online`='1571828058',`is_online`=1  WHERE  `machine_id` IS NULL [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:54:36+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.133517s] [吞吐率：7.49req/s] [内存消耗：2,608.91kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'd8eceffc-0ec6-4b4f-8b89-bd590016eaf0',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 11000,
+    'O' => '11000',
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.054007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`='北京',`soft_version`=NULL,`last_online`='1571828076',`is_online`=1  WHERE  `machine_id` IS NULL [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.028504s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:55:15+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.042505s] [吞吐率：23.53req/s] [内存消耗：2,010.49kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '76',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '66f6f59a-494d-46de-8e96-e96a78227537',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:55:31+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.051506s] [吞吐率：19.42req/s] [内存消耗：2,010.49kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '76',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b1749793-88b3-4db2-9b1e-6e347bf5d4d2',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:56:27+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.037005s] [吞吐率：27.02req/s] [内存消耗：2,011.57kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000501s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '64',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f1927854-f17d-45db-8ac6-347859d32d23',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:56:36+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.054507s] [吞吐率：18.35req/s] [内存消耗：2,011.57kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '65',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'ecf4fff2-857b-4e7c-96ab-073dd1d23ca6',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:56:50+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.040505s] [吞吐率：24.69req/s] [内存消耗：2,011.57kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '67',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'e1238ec3-93bb-4775-a0bf-f24b36081882',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:57:04+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.054507s] [吞吐率：18.35req/s] [内存消耗：2,011.57kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '67',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f956a24f-7446-4486-83a5-5635c9245138',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:57:29+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.042005s] [吞吐率：23.81req/s] [内存消耗：2,012.65kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '67',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'd4be0b39-c0be-4ffc-8766-6fd7a70f2cb9',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:57:41+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.039505s] [吞吐率：25.31req/s] [内存消耗：2,012.65kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '68',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f42b35fa-98cf-4df1-b4ee-436af7d4650a',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:58:08+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.048006s] [吞吐率：20.83req/s] [内存消耗：2,013.86kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '86',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '523dc076-d1f5-4835-9101-be1ad9851d98',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'msgtype' => 'lg',
+    'type' => 2,
+    'px' => 2,
+  ),
+  'machinesn' => 10086,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:58:12+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.054507s] [吞吐率：18.35req/s] [内存消耗：2,013.86kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.019503s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '80',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'bb29c847-7ab9-4a96-ab21-971edcd3f4d5',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'type' => 2,
+    'px' => 2,
+  ),
+  'machinesn' => 10086,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:58:16+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.042006s] [吞吐率：23.81req/s] [内存消耗：2,013.84kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '77',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '62978ec5-3c42-4530-9625-2665ad414c86',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 2,
+    'px' => 2,
+  ),
+  'machinesn' => 10086,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:58:25+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.038505s] [吞吐率：25.97req/s] [内存消耗：2,013.79kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '70',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '389be7fd-7015-4cdb-bea7-8d7784120c7c',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 2,
+  ),
+  'machinesn' => 10086,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:58:29+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.054507s] [吞吐率：18.35req/s] [内存消耗：2,013.68kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '52',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f22e2a69-6678-4bd8-a8d8-0eac6eb3deb8',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 2,
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:58:41+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.051007s] [吞吐率：19.61req/s] [内存消耗：2,013.68kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '52',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '6983528b-3762-4189-a64f-9ea7a371eb56',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 2,
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:58:59+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.050007s] [吞吐率：20.00req/s] [内存消耗：2,014.06kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '63',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7f807e4b-4ae8-4165-b0bc-ea9ef0a21e98',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+    ),
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:59:07+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.057508s] [吞吐率：17.39req/s] [内存消耗：2,012.98kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '63',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'a7c6e801-353e-4164-9219-dcf3f4aef353',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+    ),
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-10-23T18:59:13+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.127516s] [吞吐率：7.84req/s] [内存消耗：2,609.73kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '63',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'e21debf9-f39f-4fc4-a2aa-3a21fee7d97a',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+    ),
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`=NULL,`last_online`='1571828353',`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:59:23+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.142519s] [吞吐率：7.02req/s] [内存消耗：2,609.73kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '63',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'ed749536-3186-4cdf-8b56-00124ee8ad34',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+    ),
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.051506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`=NULL,`last_online`='1571828363',`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.026503s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T18:59:27+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.268534s] [吞吐率：3.72req/s] [内存消耗：2,615.34kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '63',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '693cecf4-e1c8-4c15-8ed9-c662a9ae94c2',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+    ),
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.058007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`=NULL,`last_online`='1571828367',`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.059508s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-10-23T19:02:04+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/server
+[运行时间：0.160020s] [吞吐率：6.25req/s] [内存消耗：2,615.34kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '63',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '2839b5a2-c7f3-452e-ac0c-99cbfbcf8c4a',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/json',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+    ),
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.055007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`=NULL,`last_online`='1571828524',`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.021502s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-10-23T19:09:02+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/tx
+[运行时间：0.251532s] [吞吐率：3.98req/s] [内存消耗：2,802.34kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'tx',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->tx[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.050006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods_type` [ RunTime:0.051007s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `fa_client_goods_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [2]file_put_contents(./public/goods_info/1.txt): failed to open stream: No such file or directory[D:\WWW\last\application\api\controller\Test.php:105]
+---------------------------------------------------------------
+[ 2019-10-23T19:16:46+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/tx
+[运行时间：0.140018s] [吞吐率：7.14req/s] [内存消耗：2,803.17kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'tx',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->tx[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.041005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods_type` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `fa_client_goods_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [2]fopen(./public/goods_info/1.txt): failed to open stream: No such file or directory[D:\WWW\last\application\api\controller\Test.php:105]
+---------------------------------------------------------------
+[ 2019-10-23T19:17:15+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/tx
+[运行时间：0.252032s] [吞吐率：3.97req/s] [内存消耗：2,803.17kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'tx',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->tx[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods_type` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `fa_client_goods_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [2]fopen(/public/goods_info/1.txt): failed to open stream: No such file or directory[D:\WWW\last\application\api\controller\Test.php:105]
+---------------------------------------------------------------
+[ 2019-10-23T19:17:38+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/tx
+[运行时间：0.199025s] [吞吐率：5.02req/s] [内存消耗：2,762.95kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.020003s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'tx',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=qc3jelmj2spun5uqcdea8i37g2; API_NAVBAR_STATUS=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->tx[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.087011s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods_type` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `fa_client_goods_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000500s ]

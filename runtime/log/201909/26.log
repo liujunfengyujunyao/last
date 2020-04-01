@@ -1,0 +1,3130 @@
+---------------------------------------------------------------
+[ 2019-09-26T15:28:09+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/stock_list
+[运行时间：1.819731s] [吞吐率：0.55req/s] [内存消耗：2,822.63kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.044506s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'stock_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '767',
+  'content-type' => 'multipart/form-data; boundary=--------------------------251494695124772801429866',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b2b30af5-f627-4156-ad16-f68c3c8fd458',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.020503s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->stock_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.074010s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.036004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_org` [ RunTime:0.029003s ]
+[ sql ] [ SQL ] SELECT `goods_price`,`add_goods`,`org_level` FROM `fa_client_org` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_stock` [ RunTime:0.052506s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_name` FROM `fa_stock` WHERE  `stock_type` = 1  AND `pid` = 2 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:25:35+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory
+[运行时间：1.589702s] [吞吐率：0.63req/s] [内存消耗：2,879.38kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.047006s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------263768827538778107509957',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'eceace3d-89ab-4bf5-914d-518574bfd19c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.022503s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:25:38+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.146018s] [吞吐率：6.85req/s] [内存消耗：2,823.97kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------456264581113621128687058',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '63423cc4-e675-4478-b44c-ca1120ea58f5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:26:03+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.141518s] [吞吐率：7.07req/s] [内存消耗：2,823.91kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '751',
+  'content-type' => 'multipart/form-data; boundary=--------------------------762242680723361087576545',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '4a935da7-ba92-46e0-92d5-ff1b7c73ff5f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:26:06+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.156020s] [吞吐率：6.41req/s] [内存消耗：2,823.97kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------248915952720703310562631',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f683e9c9-d819-41ad-ab83-ba8e33257831',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.035504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:39:10+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/goods_list
+[运行时间：0.171021s] [吞吐率：5.85req/s] [内存消耗：2,832.86kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------894037135805586907566688',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'c1bc35bb-09ba-4933-8d80-2d7be0550327',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->goods_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.046006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_goods` WHERE  `org_id` = 2 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:42:03+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/goods_list
+[运行时间：0.135017s] [吞吐率：7.41req/s] [内存消耗：2,827.62kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------164438228507040124759068',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b4b2f1e3-2bbe-42b3-afbc-bef52e60b7d0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->goods_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name` FROM `fa_client_goods` WHERE  `org_id` = 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:46:02+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.280035s] [吞吐率：3.57req/s] [内存消耗：2,882.18kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------856655202628625991202286',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '4013241d-e166-45e0-8897-427a61fa8b0a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.040006s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%第一件商品% )' at line 1[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-26T18:47:02+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.191524s] [吞吐率：5.22req/s] [内存消耗：2,826.88kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010002s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------317509862896689990658481',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '753031be-fc8f-4e24-a843-08c9ec116d5c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.058008s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.036005s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.002500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:48:34+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.150019s] [吞吐率：6.67req/s] [内存消耗：2,882.99kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------795930241771060787090533',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '56d59b0a-9eae-4829-a1c0-4959fc35fc98',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.022002s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%第一件商品% )' at line 1[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-26T18:49:11+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.179523s] [吞吐率：5.57req/s] [内存消耗：2,834.61kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------192694405501651165826597',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '1767fb4b-a345-4561-bdb4-f68b2db189b4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.041505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.030003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_goods` WHERE  (  goods_name like '%第一件商品%' ) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:50:28+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.170021s] [吞吐率：5.88req/s] [内存消耗：2,827.57kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.025503s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------248474709491161519204954',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '600d6e38-a3c7-448d-b1aa-ce70521607ae',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.039005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.020502s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:50:39+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.172022s] [吞吐率：5.81req/s] [内存消耗：2,882.48kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------957690068742192372277791',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '92bd1ea9-c744-449a-b33a-861801ea6282',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.023503s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 't2.id' in 'field list'[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-26T18:50:56+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.155019s] [吞吐率：6.45req/s] [内存消耗：2,832.62kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------761852859147737779562096',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '852e5566-4263-4708-9fe1-c27d76b5f3e8',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`id`=`t2`.`goods_id` WHERE  `stock_id` = 1  AND (  t2.goods_name like'%第一件商品%' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:52:33+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.145519s] [吞吐率：6.87req/s] [内存消耗：2,831.30kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '875',
+  'content-type' => 'multipart/form-data; boundary=--------------------------886258775733037280837590',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '764f3d07-f677-4ce3-b174-1961e764064e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.017503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.020502s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1'  AND (  t2.goods_name like'%第一件商品%' ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:53:00+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_add
+[运行时间：0.166021s] [吞吐率：6.02req/s] [内存消耗：2,879.96kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '983',
+  'content-type' => 'multipart/form-data; boundary=--------------------------102819371434637890905463',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'ccfddeb7-b612-4559-aa12-84688760a249',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_add[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` WHERE  `stock_id` = 1  AND `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: number[D:\WWW\last\application\api\controller\Stock.php:108]
+---------------------------------------------------------------
+[ 2019-09-26T18:53:23+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_add
+[运行时间：0.186024s] [吞吐率：5.38req/s] [内存消耗：2,802.82kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------779111021032635862943925',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '5848d42a-a3b4-4954-a384-06ba17d41471',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '1',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_add[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.051006s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` WHERE  `stock_id` = 1  AND `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_inventory` (`goods_id` , `number` , `stock_id`) VALUES (1 , 3 , 1) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:54:11+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.156020s] [吞吐率：6.41req/s] [内存消耗：2,831.88kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------495704033381672610947565',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '60b7fc01-b54d-449a-b35c-97e82d9ee050',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '1',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1'  AND (  t2.goods_name like'%第一件商品%' ) [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:54:34+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.319540s] [吞吐率：3.13req/s] [内存消耗：2,830.05kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------501439247052379105083093',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f17f70c1-93f7-4bbc-9b8e-cbe4a5df76e5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '1',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.044005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.042505s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.133517s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:56:02+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.189025s] [吞吐率：5.29req/s] [内存消耗：2,829.58kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------760410509808888570948650',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '43a78bd6-a3b8-41b8-a4a4-f5a22a85bc6d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '1',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.056508s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.034504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` WHERE  (  stock_id = 1 ) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:56:19+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.223028s] [吞吐率：4.48req/s] [内存消耗：2,830.02kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------030812552466599074087487',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '0d2e6666-6fa8-49a0-a4aa-0f06942117a3',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '1',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.042505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.040505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.034005s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:57:09+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.218527s] [吞吐率：4.58req/s] [内存消耗：2,830.13kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.013001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------973211549057050636145189',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '80a784d2-cf2d-41fb-91f6-e3fea2a7a44b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '1',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.039505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.034005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.039505s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.033504s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:57:25+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.198025s] [吞吐率：5.05req/s] [内存消耗：2,830.13kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------583701065994723235606293',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'bdfd9d01-237a-490b-85c7-11352d6148df',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.049007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.030504s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:57:36+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.234030s] [吞吐率：4.27req/s] [内存消耗：2,830.13kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.025003s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------068132891720412608264974',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'd0f2e178-07d5-4684-b9bf-13c6414a76b0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.054007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.029003s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:58:07+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.213027s] [吞吐率：4.69req/s] [内存消耗：2,830.20kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------831196206329984825561625',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '51819eae-b2ab-4762-bf78-9aefaefaf83c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.044505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.034505s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.034504s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:58:54+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.180023s] [吞吐率：5.55req/s] [内存消耗：2,830.20kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------308666181430357402053265',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '5bfe4992-4ecb-4a75-b8d7-adc43c035954',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.034004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.035005s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:59:01+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.207527s] [吞吐率：4.82req/s] [内存消耗：2,830.20kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.013502s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------709723995211182542675598',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b707c8b3-6418-499c-b7af-ec25c375dbe1',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '1',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.039005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.037504s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:59:08+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.247531s] [吞吐率：4.04req/s] [内存消耗：2,830.20kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.046006s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------712291976314707929838230',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'dfe58b21-6606-4448-b86a-debe16afc865',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.043505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.039505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.029004s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T18:59:17+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.216528s] [吞吐率：4.62req/s] [内存消耗：2,830.09kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------962697475895479418150411',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'da44d094-19e0-4237-b44b-192bdcf79ef0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.043505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.041005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.036005s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.034504s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:00:07+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.146518s] [吞吐率：6.83req/s] [内存消耗：2,880.94kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------923845546974498242934512',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '60d4c836-9a27-45f5-a7de-47eda7630a89',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.043006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.025503s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '2.goods_id' in 'on clause'[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-26T19:00:15+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.226529s] [吞吐率：4.41req/s] [内存消耗：2,835.74kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------243905794514553762592253',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'e20d4bbc-e28e-4dee-92cb-558aab3eeb22',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.095012s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.030503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  (  stock_id = 1 ) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:01:10+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.256533s] [吞吐率：3.90req/s] [内存消耗：2,880.89kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.017002s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------000422487639082551631489',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '8839b1ef-1ed9-4969-a9e4-402f040a0595',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.079510s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.049006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.036005s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 't2.stock_id' in 'where clause'[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-26T19:01:23+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.180023s] [吞吐率：5.55req/s] [内存消耗：2,835.77kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------897534299299090036837987',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '3edbb423-6e18-4684-9a3e-a8ee2a12db8e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.041506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.043006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.038505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  (  t1.stock_id = 1 ) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:01:37+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.145518s] [吞吐率：6.87req/s] [内存消耗：2,833.86kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------072583454898220450921599',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7a81ac29-b4b3-49fe-9204-b24003665e21',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:01:53+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.214528s] [吞吐率：4.66req/s] [内存消耗：2,879.16kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------391860602449696145961631',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '06057ebd-1bf1-45b0-98c6-d10ae00de519',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.046506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.056007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.036505s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'last.fa_clientgoods' doesn't exist[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-26T19:02:00+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.153520s] [吞吐率：6.51req/s] [内存消耗：2,833.86kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------220791922741296391198924',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'd757ab80-4df9-4e50-928f-9af693100de5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:03:34+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.191025s] [吞吐率：5.23req/s] [内存消耗：2,837.59kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------581582004912516166434942',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7d5ea3f6-9e65-4188-82fb-c56da0e238fb',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.039005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.034004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_goods` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:03:54+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.159020s] [吞吐率：6.29req/s] [内存消耗：2,829.40kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------130198116406540436496302',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '72965bd7-c4a6-4f76-ae78-7f6712779f06',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.042506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:04:19+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.155020s] [吞吐率：6.45req/s] [内存消耗：2,833.86kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------248041134765026670123480',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '0ca9440e-8f2c-414b-a7f6-ece9b475769d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.041505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.027004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:05:54+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.193025s] [吞吐率：5.18req/s] [内存消耗：2,833.86kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------241214701861855874359187',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'ca65af81-a658-43a9-ac96-ac6d45137bba',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.039505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.041006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.035004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:06:13+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.190524s] [吞吐率：5.25req/s] [内存消耗：2,834.23kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------437455972498722154832701',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '72888750-2caa-4006-b67a-e9bcf4e87a43',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.037505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.044005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:08:29+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.163520s] [吞吐率：6.12req/s] [内存消耗：2,879.41kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------555349656928245134402261',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '5fa4c2f3-80e1-4473-9254-e9537d61021d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.026503s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 't1.gi' in 'on clause'[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-26T19:08:39+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.197025s] [吞吐率：5.08req/s] [内存消耗：2,828.11kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------986469680853386672273034',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '9d381cdf-68a6-40d1-b289-eb232cfbfc2a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.043006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.042505s ]
+[ sql ] [ SQL ] SELECT t1.goods_id as gi,`t2`.`goods_id` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:08:54+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.157520s] [吞吐率：6.35req/s] [内存消耗：2,879.41kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------797701026085226996400327',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '93ef43da-17e7-4922-a26d-6d9283fcab18',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.040505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.029504s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 't2.id' in 'on clause'[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-26T19:09:03+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.188524s] [吞吐率：5.30req/s] [内存消耗：2,828.11kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------840305113416396370884039',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f37bde77-d53e-46e4-9390-680218bf8519',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.008001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.048506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.034004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT t1.goods_id as gi,`t2`.`goods_id` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:09:39+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.174022s] [吞吐率：5.75req/s] [内存消耗：2,828.11kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------509529462057795860210257',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '3826db33-ed7e-416b-8fa1-05945a05a72e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.044506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT t1.goods_id as gi,`t2`.`goods_id` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:09:47+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.185524s] [吞吐率：5.39req/s] [内存消耗：2,828.11kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------048268029358970864026561',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '28494dd8-c2e3-4ae6-931c-978368a37145',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.055007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.034505s ]
+[ sql ] [ SQL ] SELECT t1.goods_id as gi,`t2`.`goods_id` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:09:55+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/test
+[运行时间：0.157020s] [吞吐率：6.37req/s] [内存消耗：2,828.11kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------549817490809486558879365',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '541f62c5-36a8-4e92-9b41-b851f808eae5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->test[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT t1.goods_id as gi,`t2`.`goods_id` FROM `fa_inventory` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:10:57+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/goods_list
+[运行时间：0.147019s] [吞吐率：6.80req/s] [内存消耗：2,829.38kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------697703301768318996813708',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '42e1f113-c566-4726-852e-a4956411eb47',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->goods_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name` FROM `fa_client_goods` WHERE  `org_id` = 2 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:11:08+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/goods_list
+[运行时间：0.181023s] [吞吐率：5.52req/s] [内存消耗：2,829.38kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------463796298492302920646712',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'c18f6112-adad-4984-a005-99f19401e877',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->goods_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.037505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.044005s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name` FROM `fa_client_goods` WHERE  `org_id` = 2 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:11:21+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/goods_list
+[运行时间：0.157020s] [吞吐率：6.37req/s] [内存消耗：2,829.38kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------563916749369325034642529',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'de8f1e66-26fc-442b-93b8-4b9d37dbed3e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->goods_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.035504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.028503s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name` FROM `fa_client_goods` WHERE  `org_id` = 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:11:29+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/goods_list
+[运行时间：0.160520s] [吞吐率：6.23req/s] [内存消耗：2,829.38kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------669619884168892595923747',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'e2a60307-93d9-43d6-9302-749336a38889',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->goods_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.030504s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name` FROM `fa_client_goods` WHERE  `org_id` = 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:11:48+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.173522s] [吞吐率：5.76req/s] [内存消耗：2,828.60kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------213086058952626822746379',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '181b837c-bdf9-403b-a8da-146804edc5c6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.039505s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:11:52+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.241031s] [吞吐率：4.15req/s] [内存消耗：2,832.46kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------078017263911472484514380',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f069be45-bd90-4140-add9-cb87bf82687f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.041005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.066008s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.029004s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.034004s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1'  AND (  t2.goods_name like'%第一件商品%' ) [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:11:57+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.266534s] [吞吐率：3.75req/s] [内存消耗：2,830.66kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------155739081407409959091821',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'e8c6491c-6fad-4714-aea7-c76ecbfef3c0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.069009s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.039005s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.048506s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:12:02+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.243031s] [吞吐率：4.11req/s] [内存消耗：2,830.66kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------516465474521546923518592',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '34761ecf-524a-4a72-911b-28b9ce9b1f4b',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.073510s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.048506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.028003s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.027004s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:12:17+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.213527s] [吞吐率：4.68req/s] [内存消耗：2,830.78kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------840638261085909302334217',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '5f15ad8a-065f-4c28-9296-45c94461bdaa',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.040005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.035504s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.036505s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:12:23+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.245031s] [吞吐率：4.08req/s] [内存消耗：2,832.46kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------135801630768656045033137',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'debf8e4e-932c-4bb1-bc5c-1642963b8bf4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.056507s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.040505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.037504s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.048007s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1'  AND (  t2.goods_name like'%第一件商品%' ) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:12:33+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_list
+[运行时间：0.182024s] [吞吐率：5.49req/s] [内存消耗：2,830.78kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------830184301595638741220815',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '5606b80f-0267-4749-8ee5-1cef6b33d32e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_list[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.036004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.026503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT `t2`.`goods_id`,`t2`.`goods_name`,`t1`.`number` FROM `fa_inventory` `t1` INNER JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`stock_id` = '1' [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:49:10+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_obj
+[运行时间：0.193525s] [吞吐率：5.17req/s] [内存消耗：2,829.27kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.018502s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_obj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------694835919704902221576281',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'c1b46363-111e-48d7-84a6-2214dde9221e',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_obj[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.040005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_stock` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_stock` WHERE  `pid` = 2 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-09-26T19:49:36+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/stock/inventory_obj
+[运行时间：0.194524s] [吞吐率：5.14req/s] [内存消耗：2,828.66kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'stock',
+    2 => 'inventory_obj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '1089',
+  'content-type' => 'multipart/form-data; boundary=--------------------------474638678489952206833275',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '6bda7173-371b-4958-92c0-ce3f518b541c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => '第一件商品',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => '第一个分类',
+  'stock_id' => '1',
+  'goods_id' => '2',
+  'number' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Stock->inventory_obj[ D:\WWW\last\application\api\controller\Stock.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.044006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f22e64db2e0fc8bde78568cdab960c4f220075a1' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.043005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_stock` [ RunTime:0.042505s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_name` FROM `fa_stock` WHERE  `pid` = 2 [ RunTime:0.000500s ]

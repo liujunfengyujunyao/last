@@ -51,13 +51,11 @@ require.config({
         'selectpage': '../libs/fastadmin-selectpage/selectpage',
         'citypicker': '../libs/fastadmin-citypicker/dist/js/city-picker.min',
         'citypicker-data': '../libs/fastadmin-citypicker/dist/js/city-picker.data',
-        'jquery-code': '../code',
     },
     // shim依赖配置
     shim: {
         'addons': ['backend'],
         'bootstrap': ['jquery'],
-        'jquery-code': ['jquery'],
         'bootstrap-table': {
             deps: [
                 'bootstrap',
@@ -148,7 +146,13 @@ require(['jquery', 'bootstrap'], function ($, undefined) {
                 //加载相应模块
                 if (Config.jsname) {
                     require([Config.jsname], function (Controller) {
-                        Controller[Config.actionname] != undefined && Controller[Config.actionname]();
+                        if (Controller.hasOwnProperty(Config.actionname)) {
+                            Controller[Config.actionname]();
+                        } else {
+                            if (Controller.hasOwnProperty("_empty")) {
+                                Controller._empty();
+                            }
+                        }
                     }, function (e) {
                         console.error(e);
                         // 这里可捕获模块加载的错误

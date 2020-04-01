@@ -272,8 +272,21 @@ return [
         //自动检测更新
         'checkupdate'         => false,
         //版本号
-        'version'             => '1.0.0.20190510_beta',
+        'version'             => '1.0.0.20190705_beta',
         //API接口地址
         'api_url'             => 'https://api.fastadmin.net',
+    ],
+
+    'db2'   =>  [
+        'type'     => 'mysql',   // 数据库类型
+        'hostname' => 'pipiyaode.mysql.rds.aliyuncs.com',  //服务器地址
+        'database' => 'fa',  // 数据库名
+        'username' => 'root',  // 数据库用户名
+        'password' => 'Apple116165',  // 数据库密码
+        'hostport' => '3306',   // 数据库连接端口
+        'params'   => [],   // 数据库连接参数
+        'charset'  => 'utf8',  // 数据库编码默认采用utf8
+        'prefix'   => 'fa_',   // 数据库表前缀
+
     ],
 ];

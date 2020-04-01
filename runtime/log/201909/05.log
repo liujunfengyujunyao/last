@@ -1,0 +1,2505 @@
+---------------------------------------------------------------
+[ 2019-09-05T11:42:00+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.043505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T11:42:23+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `successions`=2,`maxsuccessions`=2,`prevtime`=1567580765,`logintime`=1567654943,`token`='842e4f11-85b7-4b12-a006-8f91e0f12f44',`updatetime`=1567654943  WHERE  `id` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('7b623d0ecb6d348c95cf05ff069ff1e5678d5578' , 2 , 1567654943 , 1570246943) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '7b623d0ecb6d348c95cf05ff069ff1e5678d5578' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:04:39+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567654943,`logintime`=1567663478,`token`='f9dac1bb-1526-4ec1-8e98-d1b0bdd36fca',`updatetime`=1567663478  WHERE  `id` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('92c575e4d3a0be5c2597eb62a444995ec0b8d7f0' , 2 , 1567663478 , 1570255478) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '92c575e4d3a0be5c2597eb62a444995ec0b8d7f0' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.026504s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 't1.auth_ids WHERE  `t1`.`id` = 1' at line 1
+---------------------------------------------------------------
+[ 2019-09-05T14:05:33+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567663478,`logintime`=1567663533,`token`='6e5f33da-1222-4621-a189-31006c299c95',`updatetime`=1567663533  WHERE  `id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('ef108213b5979fd108207964fd11179e4a53b0d7' , 2 , 1567663533 , 1570255533) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'ef108213b5979fd108207964fd11179e4a53b0d7' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.023003s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 't1.auth_ids WHERE  `t1`.`id` = 1' at line 1
+---------------------------------------------------------------
+[ 2019-09-05T14:05:40+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/test
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.105513s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:06:38+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/index/test
+[ error ] [0]致命错误: Class 'app\api\controller\DB' not found
+---------------------------------------------------------------
+[ 2019-09-05T14:07:01+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/index/test
+[运行时间：0.121015s] [吞吐率：8.26req/s] [内存消耗：2,125.23kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1564468414,1564556070,1564986980,1565321967; Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; PHPSESSID=for43b5id5muc5abg48t6kvkp6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Index->test[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class 'app\api\controller\DB' not found[D:\WWW\last\application\api\controller\Index.php:27]
+---------------------------------------------------------------
+[ 2019-09-05T14:07:12+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/index/test
+[运行时间：0.079510s] [吞吐率：12.58req/s] [内存消耗：2,781.97kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1564468414,1564556070,1564986980,1565321967; Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; PHPSESSID=for43b5id5muc5abg48t6kvkp6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Index->test[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.031004s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 't1.auth_ids WHERE  `t1`.`id` = 1' at line 1[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-05T14:08:52+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/index/test
+[运行时间：0.082511s] [吞吐率：12.12req/s] [内存消耗：2,740.77kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1564468414,1564556070,1564986980,1565321967; Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; PHPSESSID=for43b5id5muc5abg48t6kvkp6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Index->test[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_rule` `t1` INNER JOIN `fa_client_auth` `ca` ON `ca`.`id`=`t1`.`id` WHERE  `t1`.`id` = 1 [ RunTime:0.013502s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:09:47+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/index/test
+[运行时间：0.076009s] [吞吐率：13.16req/s] [内存消耗：2,781.97kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1564468414,1564556070,1564986980,1565321967; Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; PHPSESSID=for43b5id5muc5abg48t6kvkp6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Index->test[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.022503s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 't1.auth_ids WHERE  `t1`.`id` = 1' at line 1[D:\WWW\last\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-09-05T14:18:34+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.169522s] [吞吐率：5.90req/s] [内存消耗：2,912.32kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------602980043979982641854981',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'c38d44df-a20e-4069-8b47-e214a4ed6c24',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bc090201-c272-4470-9a6e-75ee5e774acd',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567663533,`logintime`=1567664314,`token`='a9d425fa-684a-4d53-9ab3-3035f5b421d7',`updatetime`=1567664314  WHERE  `id` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('27a543cdbcd4fcdf47117c048897ff94f9db33b0' , 2 , 1567664314 , 1570256314) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '27a543cdbcd4fcdf47117c048897ff94f9db33b0' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.017502s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.013002s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:20:09+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.206026s] [吞吐率：4.85req/s] [内存消耗：2,912.32kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------412279774727782918603036',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '9cb33f8c-4a58-4436-8d21-b1b1d46c2253',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bc090201-c272-4470-9a6e-75ee5e774acd',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.037005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567664314,`logintime`=1567664409,`token`='a5da759b-8e72-4499-8de2-2c0dbd653424',`updatetime`=1567664409  WHERE  `id` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('519ce3f51ec74bd182d7fccbad7685869c337d89' , 2 , 1567664409 , 1570256409) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '519ce3f51ec74bd182d7fccbad7685869c337d89' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:22:52+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.199525s] [吞吐率：5.01req/s] [内存消耗：2,916.70kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------961855388394502355145639',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '1d1196c4-b3e6-4bd5-9b80-fdf8c36c4b04',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bc090201-c272-4470-9a6e-75ee5e774acd',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567664409,`logintime`=1567664572,`token`='6814100b-1443-4036-8e16-8659c5936bff',`updatetime`=1567664572  WHERE  `id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('e94ca51ec8b6f32e501c672fe67b00f98c83a511' , 2 , 1567664572 , 1570256572) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e94ca51ec8b6f32e501c672fe67b00f98c83a511' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.018502s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.034005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:25:23+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/org/index
+[运行时间：0.037504s] [吞吐率：26.66req/s] [内存消耗：2,094.48kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1564468414,1564556070,1564986980,1565321967; Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; PHPSESSID=for43b5id5muc5abg48t6kvkp6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Org->index[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-09-05T14:30:48+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_list
+[运行时间：0.089511s] [吞吐率：11.17req/s] [内存消耗：2,809.28kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------444833356813712734421533',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'd4f14f3c-a20e-45fd-9c4c-7d2671014d30',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bc090201-c272-4470-9a6e-75ee5e774acd',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_list[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.017503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:31:04+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_list
+[运行时间：0.096012s] [吞吐率：10.42req/s] [内存消耗：2,809.16kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------783944661350885971977486',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b0fcbf79-4d27-41ad-a02e-f7b7ca14738a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bc090201-c272-4470-9a6e-75ee5e774acd',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_list[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:31:15+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.106513s] [吞吐率：9.39req/s] [内存消耗：2,810.23kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------259487831172108832127996',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f53bb4cd-3e52-42ed-868b-eada2e0bcdec',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bc090201-c272-4470-9a6e-75ee5e774acd',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:31:25+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.090512s] [吞吐率：11.05req/s] [内存消耗：2,810.36kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------397420417540610190064013',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '1056ac74-57a6-4d50-bb65-25d007064740',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bc090201-c272-4470-9a6e-75ee5e774acd',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:31:57+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.189024s] [吞吐率：5.29req/s] [内存消耗：2,916.70kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------231077892384449142084347',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '9f8e98be-49ee-44e8-846f-67db5d7b7e7c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bc090201-c272-4470-9a6e-75ee5e774acd',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'e8085fa9b74489ec343b756860b009111c078d3a' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567664572,`logintime`=1567665117,`token`='8eaee35b-2683-46f2-8fd4-3d71c53b04b6',`updatetime`=1567665117  WHERE  `id` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('2ecbd8f1145c783ca188f23c3f5a57f4f55c2a07' , 2 , 1567665117 , 1570257117) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '2ecbd8f1145c783ca188f23c3f5a57f4f55c2a07' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:32:18+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.106014s] [吞吐率：9.43req/s] [内存消耗：2,814.73kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------860507325504093764052480',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'd68267a2-9932-4638-b5c0-2bdc4ac82608',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b6',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.035004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '2ecbd8f1145c783ca188f23c3f5a57f4f55c2a07' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:36:12+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.118515s] [吞吐率：8.44req/s] [内存消耗：2,681.80kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '419',
+  'content-type' => 'multipart/form-data; boundary=--------------------------255457868873209186848781',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '6bec6caa-db42-4256-ae04-75bf7227fcf4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '6057f1a7d48fd47c5699f9b857dbf48342779066' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:36:31+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.105014s] [吞吐率：9.52req/s] [内存消耗：2,681.80kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '419',
+  'content-type' => 'multipart/form-data; boundary=--------------------------920600348885988840691395',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'c52e6de4-0831-4504-9aef-95d58df0b4f0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '6057f1a7d48fd47c5699f9b857dbf48342779066' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:36:38+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.091012s] [吞吐率：10.99req/s] [内存消耗：2,792.31kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '419',
+  'content-type' => 'multipart/form-data; boundary=--------------------------217128537517358361115102',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b811ddf2-8d23-473a-92f5-05d7b449bd3a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '6057f1a7d48fd47c5699f9b857dbf48342779066' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:37:16+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.084511s] [吞吐率：11.83req/s] [内存消耗：2,797.25kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '419',
+  'content-type' => 'multipart/form-data; boundary=--------------------------152458688424762399726031',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '41cca3e6-11ea-410e-93cb-20ea41a6ef49',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '6057f1a7d48fd47c5699f9b857dbf48342779066' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:38:00+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.137518s] [吞吐率：7.27req/s] [内存消耗：2,865.18kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------570410492663310889856516',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '9f55d0bf-3cb4-4075-956d-0df4c5942c54',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b6',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '2ecbd8f1145c783ca188f23c3f5a57f4f55c2a07' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b6' LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: role_id[D:\WWW\last\application\api\controller\Org.php:37]
+---------------------------------------------------------------
+[ 2019-09-05T14:38:32+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.091511s] [吞吐率：10.93req/s] [内存消耗：2,818.42kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------196752479124599336355349',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '95378c7a-1dd1-4ba2-92cb-807a5118dbf6',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b6',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '2ecbd8f1145c783ca188f23c3f5a57f4f55c2a07' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.017502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b6' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:38:47+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.104514s] [吞吐率：9.57req/s] [内存消耗：2,817.09kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------688281860304501253828151',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '3e5b7eea-4a3b-4c62-843d-a21ba75d2909',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b6',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '2ecbd8f1145c783ca188f23c3f5a57f4f55c2a07' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.017502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b6' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:38:50+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.100013s] [吞吐率：10.00req/s] [内存消耗：2,817.09kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------412323172582389905176261',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '85d64f50-7cd5-4807-a2d1-d0a6868197c0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b6',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '2ecbd8f1145c783ca188f23c3f5a57f4f55c2a07' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b6' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T14:38:54+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.117515s] [吞吐率：8.51req/s] [内存消耗：2,797.23kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '419',
+  'content-type' => 'multipart/form-data; boundary=--------------------------672694656873673137941001',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '8fefae1b-9776-433d-951e-c9a913ae7515',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '6057f1a7d48fd47c5699f9b857dbf48342779066' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:30:13+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.908616s] [吞吐率：1.10req/s] [内存消耗：2,801.93kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.037505s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '419',
+  'content-type' => 'multipart/form-data; boundary=--------------------------809013495904735462561158',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f24c8364-9d2c-4322-a849-bf7f2a434ea5',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.022503s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.079510s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '6057f1a7d48fd47c5699f9b857dbf48342779066' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '8eaee35b-2683-46f2-8fd4-3d71c53b04b' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:30:38+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.350044s] [吞吐率：2.86req/s] [内存消耗：2,915.21kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '419',
+  'content-type' => 'multipart/form-data; boundary=--------------------------980364313475031061592527',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '825aa4fb-521d-43cc-9071-f391993a443c',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '8eaee35b-2683-46f2-8fd4-3d71c53b04b',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '6057f1a7d48fd47c5699f9b857dbf48342779066' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567665117,`logintime`=1567668637,`token`='bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',`updatetime`=1567668637  WHERE  `id` = 2 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('eb74580f301938c6549e9542c2cc7c768d5f8129' , 2 , 1567668637 , 1570260637) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.071009s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.042005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:31:40+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.201525s] [吞吐率：4.96req/s] [内存消耗：2,869.86kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '420',
+  'content-type' => 'multipart/form-data; boundary=--------------------------971455016721675790414825',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '02a0a97b-bd30-4c4d-a0f0-9990fb9f5470',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: org_name[D:\WWW\last\application\api\controller\Org.php:43]
+---------------------------------------------------------------
+[ 2019-09-05T15:31:57+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.137017s] [吞吐率：7.30req/s] [内存消耗：2,870.17kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '530',
+  'content-type' => 'multipart/form-data; boundary=--------------------------075800571184210595626982',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7fe97930-a1e7-4c3c-92ad-db7c9a8800d0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '111',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.047506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: username[D:\WWW\last\application\api\controller\Org.php:44]
+---------------------------------------------------------------
+[ 2019-09-05T15:32:07+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.114515s] [吞吐率：8.73req/s] [内存消耗：2,870.20kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '645',
+  'content-type' => 'multipart/form-data; boundary=--------------------------591188186257420204069463',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '9fd0f765-236e-4b82-99ee-7369301850e3',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '111',
+  'username' => 'username',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: org_type[D:\WWW\last\application\api\controller\Org.php:46]
+---------------------------------------------------------------
+[ 2019-09-05T15:32:14+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.112014s] [吞吐率：8.93req/s] [内存消耗：2,870.25kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '753',
+  'content-type' => 'multipart/form-data; boundary=--------------------------257622718411512521654160',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '130418a6-5997-4593-aa32-0e2d94451ff0',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '111',
+  'username' => 'username',
+  'org_type' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: gods_price[D:\WWW\last\application\api\controller\Org.php:47]
+---------------------------------------------------------------
+[ 2019-09-05T15:32:20+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.101013s] [吞吐率：9.90req/s] [内存消耗：2,870.31kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '864',
+  'content-type' => 'multipart/form-data; boundary=--------------------------728606677406763513443047',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7cc34a3b-277f-42dc-9cad-917364af4074',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '111',
+  'username' => 'username',
+  'org_type' => '1',
+  'goods_price' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: gods_price[D:\WWW\last\application\api\controller\Org.php:47]
+---------------------------------------------------------------
+[ 2019-09-05T15:32:33+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.114515s] [吞吐率：8.73req/s] [内存消耗：2,870.28kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010002s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '864',
+  'content-type' => 'multipart/form-data; boundary=--------------------------035215905584092294516632',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '8bc57547-5510-4480-8c27-dfe4415550fe',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '111',
+  'username' => 'username',
+  'org_type' => '1',
+  'goods_price' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.034004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: goods_add[D:\WWW\last\application\api\controller\Org.php:48]
+---------------------------------------------------------------
+[ 2019-09-05T15:32:40+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.161021s] [吞吐率：6.21req/s] [内存消耗：2,869.19kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '973',
+  'content-type' => 'multipart/form-data; boundary=--------------------------285452170926215589045845',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'edb51e2c-8b3d-4576-8c05-24cd37cd4a67',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '111',
+  'username' => 'username',
+  'org_type' => '1',
+  'goods_price' => '1',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.034004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]致命错误: Class 'app\api\controller\Random' not found[D:\WWW\last\application\api\controller\Org.php:51]
+---------------------------------------------------------------
+[ 2019-09-05T15:33:31+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.106514s] [吞吐率：9.39req/s] [内存消耗：2,884.48kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '973',
+  'content-type' => 'multipart/form-data; boundary=--------------------------254772335159273978532301',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '5bdcb142-6b49-43b4-bceb-33a0524a8a98',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '111',
+  'username' => 'username',
+  'org_type' => '1',
+  'goods_price' => '1',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]致命错误: Call to undefined method app\api\controller\Org::getEncryptPassword()[D:\WWW\last\application\api\controller\Org.php:54]
+---------------------------------------------------------------
+[ 2019-09-05T15:33:53+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.132017s] [吞吐率：7.57req/s] [内存消耗：2,839.66kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '973',
+  'content-type' => 'multipart/form-data; boundary=--------------------------161315087530091957913445',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '0474a796-521f-420a-b381-9ebec3609646',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '111',
+  'username' => 'username',
+  'org_type' => '1',
+  'goods_price' => '1',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.045506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:43:38+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.202526s] [吞吐率：4.94req/s] [内存消耗：2,847.00kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------078646810518294242545518',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '64629a84-d3a3-429c-8e4d-c2d062c1fb43',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.044506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `rule_id` , `pid` , `org_level`) VALUES ('org1' , 'bd962858b329364745e3144655800667' , 1 , 0 , '' , 'org1' , 'N0Fip5' , 1567669418 , '192.168.1.144' , 1567669418 , '192.168.1.144' , 1567669418 , 'normal' , 2 , 2 , 2) [ RunTime:0.054506s ]
+[ error ] [8]未定义数组索引: org_name[D:\WWW\last\application\api\controller\Org.php:86]
+---------------------------------------------------------------
+[ 2019-09-05T15:46:10+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.111514s] [吞吐率：8.97req/s] [内存消耗：2,887.36kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------108615830649919287775431',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '3fcb6695-f195-4836-80f2-cb47c478f30f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: org_name[D:\WWW\last\application\api\controller\Org.php:86]
+---------------------------------------------------------------
+[ 2019-09-05T15:46:28+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.122516s] [吞吐率：8.16req/s] [内存消耗：2,840.38kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------444918590028338769681618',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b4bbd91b-6a2f-4b56-83f2-92ad683f4d0f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.033005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:46:48+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.146518s] [吞吐率：6.83req/s] [内存消耗：2,840.38kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------672686131201653200009508',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7215fe80-b098-4b87-a8cc-b85b098978e4',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:47:01+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.122015s] [吞吐率：8.20req/s] [内存消耗：2,847.62kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------131327859129508238876359',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '69378d50-3386-4056-ab7a-b1846094a6cb',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `rule_id` , `pid` , `org_level`) VALUES ('org1' , '532eafca7202e370d3ef30f3666caae9' , 1 , 0 , '' , 'org1' , '08uS2a' , 1567669621 , '192.168.1.144' , 1567669621 , '192.168.1.144' , 1567669621 , 'normal' , 2 , 2 , 2) [ RunTime:0.023503s ]
+[ error ] [8]未定义数组索引: add_goods[D:\WWW\last\application\api\controller\Org.php:91]
+---------------------------------------------------------------
+[ 2019-09-05T15:47:33+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.273535s] [吞吐率：3.66req/s] [内存消耗：2,797.14kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------134100951632748726159833',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '2d375c09-b136-4075-8a83-2e3475b0a375',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.134017s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `rule_id` , `pid` , `org_level`) VALUES ('org1' , '8334e1f2dfd46db68142fb552366fb74' , 1 , 0 , '' , 'org1' , 'Wjn4Jl' , 1567669653 , '192.168.1.144' , 1567669653 , '192.168.1.144' , 1567669653 , 'normal' , 2 , 2 , 2) [ RunTime:0.045505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_org` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] INSERT INTO `fa_client_org` (`org_name` , `create_time` , `admin_id` , `create_id` , `goods_price` , `add_goods`) VALUES ('组织1' , 1567669653 , 6 , 2 , 2 , '1') [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:48:30+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.205026s] [吞吐率：4.88req/s] [内存消耗：2,916.20kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '980',
+  'content-type' => 'multipart/form-data; boundary=--------------------------258521855669645524229297',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7b37064a-e73c-4648-8e28-a8ce1c6ee1e2',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'org1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.042006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'org1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `logintime`=1567669709,`token`='a5d72da1-3557-4e97-aae5-cefafd0f50c1',`updatetime`=1567669709  WHERE  `id` = 6 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('544ed77319b140fd6f4c60ea491556d2e2243838' , 6 , 1567669709 , 1570261709) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '544ed77319b140fd6f4c60ea491556d2e2243838' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.027504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:57:53+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.228029s] [吞吐率：4.39req/s] [内存消耗：2,917.02kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------387609679296812899280676',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'be59ed9e-4f98-40be-beca-415e8b046db8',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567668637,`logintime`=1567670273,`token`='d09a6cc2-764a-4272-89d8-7d1ef622f041',`updatetime`=1567670273  WHERE  `id` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('ca0206f53a179608e0c8299ff3ad03efefd85eba' , 2 , 1567670273 , 1570262273) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'ca0206f53a179608e0c8299ff3ad03efefd85eba' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T15:58:39+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.196525s] [吞吐率：5.09req/s] [内存消耗：2,920.55kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------425085082392626033136957',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '9cadb319-4d36-4f99-b74e-e9e5ae771056',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567670273,`logintime`=1567670319,`token`='3cc63fa2-756d-4fef-a3a4-8ac541966d5a',`updatetime`=1567670319  WHERE  `id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('1f235202d2ddb24c549174c202dc8380acbc461d' , 2 , 1567670319 , 1570262319) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '1f235202d2ddb24c549174c202dc8380acbc461d' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.018003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T16:00:14+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.163021s] [吞吐率：6.13req/s] [内存消耗：2,920.59kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------787097749201853013988995',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'af51c183-f42b-4350-b624-90604c27ad0f',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567670319,`logintime`=1567670414,`token`='b2422d64-08a2-46a9-b8ea-ea0e4c4ec363',`updatetime`=1567670414  WHERE  `id` = 2 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('f843eb16756ba9bdcd642e1b0736ff5ea4ae23d2' , 2 , 1567670414 , 1570262414) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'f843eb16756ba9bdcd642e1b0736ff5ea4ae23d2' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-05T16:04:44+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_list
+[运行时间：0.113514s] [吞吐率：8.81req/s] [内存消耗：2,834.37kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------503453629970139026194608',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'be4f1a1d-ddb3-43cf-b1ad-bc5a24b72df9',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_list[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T16:04:58+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/user/login
+[运行时间：0.216528s] [吞吐率：4.62req/s] [内存消耗：2,920.59kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------939030192510350587682575',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'b3e8d0c3-6b4c-4845-b4ac-2bc6ce036b38',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => 'bbaf93dc-7b7f-44ed-bf3f-8097a3869e41',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'eb74580f301938c6549e9542c2cc7c768d5f8129' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'user1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1567670414,`logintime`=1567670698,`token`='472c1143-242f-4458-971e-b05841ff4421',`updatetime`=1567670698  WHERE  `id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('d933e6f7793b140a9f95ec275821e296f50c34f4' , 2 , 1567670698 , 1570262698) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd933e6f7793b140a9f95ec275821e296f50c34f4' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.026503s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.041506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (39,38) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T16:06:10+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_list
+[运行时间：0.145018s] [吞吐率：6.90req/s] [内存消耗：2,819.64kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------237315746680689214624853',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '953759fe-b1a1-410c-a8bb-967e12893f92',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '472c1143-242f-4458-971e-b05841ff4421',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_list[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.036005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd933e6f7793b140a9f95ec275821e296f50c34f4' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '472c1143-242f-4458-971e-b05841ff4421' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_org` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_org` WHERE  `create_id` = 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-05T16:06:33+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_list
+[运行时间：0.189024s] [吞吐率：5.29req/s] [内存消耗：2,819.77kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------210252551373549228001432',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '78da38a5-775f-4163-aef2-a0c00c01c967',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '472c1143-242f-4458-971e-b05841ff4421',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_list[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd933e6f7793b140a9f95ec275821e296f50c34f4' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.063008s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '472c1143-242f-4458-971e-b05841ff4421' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_org` [ RunTime:0.040505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_org` WHERE  `create_id` = 2 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-09-05T16:13:25+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_add
+[运行时间：0.163021s] [吞吐率：6.13req/s] [内存消耗：2,810.91kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------994652147073053930911156',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f725f7a0-9893-433f-a2be-baaaf7c29c3d',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '472c1143-242f-4458-971e-b05841ff4421',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_add[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd933e6f7793b140a9f95ec275821e296f50c34f4' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '472c1143-242f-4458-971e-b05841ff4421' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = 'org1' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `rule_id` , `pid` , `org_level`) VALUES ('org1' , '449711d4fd97fef64ea72c5716de79de' , 1 , 0 , '' , 'org1' , 'D8GE1g' , 1567671205 , '192.168.1.144' , 1567671205 , '192.168.1.144' , 1567671205 , 'normal' , 2 , 2 , 2) [ RunTime:0.034004s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_org` [ RunTime:0.017502s ]
+[ sql ] [ SQL ] INSERT INTO `fa_client_org` (`org_name` , `org_type` , `create_time` , `admin_id` , `create_id` , `goods_price` , `add_goods`) VALUES ('组织1' , '代理商' , 1567671205 , 7 , 2 , 2 , '1') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-05T16:15:17+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_list
+[运行时间：0.123015s] [吞吐率：8.13req/s] [内存消耗：2,820.43kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------382423367512027559884544',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'f6450cc4-e83b-4171-9505-2bdd0a8531da',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '472c1143-242f-4458-971e-b05841ff4421',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_list[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.042005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd933e6f7793b140a9f95ec275821e296f50c34f4' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '472c1143-242f-4458-971e-b05841ff4421' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_org` [ RunTime:0.017002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_org` WHERE  `create_id` = 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-09-05T16:21:47+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/org/org_list
+[运行时间：0.156020s] [吞吐率：6.41req/s] [内存消耗：2,835.88kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'org',
+    2 => 'org_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '981',
+  'content-type' => 'multipart/form-data; boundary=--------------------------806430183039865637227907',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '8695cf4b-15a7-495a-bc8b-bee99d8c869a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'user1',
+  'password' => '111111',
+  'token' => '472c1143-242f-4458-971e-b05841ff4421',
+  'org_name' => '组织1',
+  'username' => 'org1',
+  'org_type' => '代理商',
+  'goods_price' => '2',
+  'goods_add' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Org->org_list[ D:\WWW\last\application\api\controller\Org.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd933e6f7793b140a9f95ec275821e296f50c34f4' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '472c1143-242f-4458-971e-b05841ff4421' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_org` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_org` WHERE  `create_id` = 2 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000000s ]

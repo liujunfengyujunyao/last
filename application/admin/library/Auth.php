@@ -37,19 +37,22 @@ class Auth extends \fast\Auth
      */
     public function login($username, $password, $keeptime = 0)
     {
+
         $admin = Admin::get(['username' => $username]);
+//        halt($admin->password);
         if (!$admin) {
-            $this->setError('Username is incorrect');
+            $this->setError('Username is incorrect');//用户名不正确
             return false;
         }
         if ($admin['status'] == 'hidden') {
-            $this->setError('Admin is forbidden');
+            $this->setError('Admin is forbidden');//账号冻结
             return false;
         }
         if (Config::get('fastadmin.login_failure_retry') && $admin->loginfailure >= 10 && time() - $admin->updatetime < 86400) {
             $this->setError('Please try again after 1 day');
             return false;
         }
+
         if ($admin->password != md5(md5($password) . $admin->salt)) {
             $admin->loginfailure++;
             $admin->save();
@@ -72,10 +75,9 @@ class Auth extends \fast\Auth
     {
         $admin = Admin::get(intval($this->id));
         if (!$admin) {
-            return true;
+            $admin->token = '';
+            $admin->save();
         }
-        $admin->token = '';
-        $admin->save();
         $this->logined = false; //重置登录状态
         Session::delete("admin");
         Cookie::delete("keeplogin");
@@ -215,6 +217,7 @@ class Auth extends \fast\Auth
 
     public function getUserInfo($uid = null)
     {
+
         $uid = is_null($uid) ? $this->id : $uid;
 
         return $uid != $this->id ? Admin::get(intval($uid)) : Session::get('admin');
@@ -375,9 +378,25 @@ class Auth extends \fast\Auth
         $refererUrl = Session::get('referer');
         $pinyin = new \Overtrue\Pinyin\Pinyin('Overtrue\Pinyin\MemoryFileDictLoader');
         // 必须将结果集转换为数组
-        $ruleList = collection(\app\admin\model\AuthRule::where('status', 'normal')->where('ismenu', 1)->order('weigh', 'desc')->cache("__menu__")->select())->toArray();
+        $ruleList = collection(\app\admin\model\AuthRule::where('status', 'normal')
+            ->where('ismenu', 1)
+            ->order('weigh', 'desc')
+            ->cache("__menu__")
+            ->select())->toArray();
+        $indexRuleList = \app\admin\model\AuthRule::where('status', 'normal')
+            ->where('ismenu', 0)
+            ->where('name', 'like', '%/index')
+            ->column('name,pid');
+        $pidArr = array_filter(array_unique(array_map(function ($item) {
+            return $item['pid'];
+        }, $ruleList)));
         foreach ($ruleList as $k => &$v) {
             if (!in_array($v['name'], $userRule)) {
+                unset($ruleList[$k]);
+                continue;
+            }
+            $indexRuleName = $v['name'] . '/index';
+            if (isset($indexRuleList[$indexRuleName]) && !in_array($indexRuleName, $userRule)) {
                 unset($ruleList[$k]);
                 continue;
             }
@@ -389,6 +408,14 @@ class Auth extends \fast\Auth
             $v['title'] = __($v['title']);
             $selected = $v['name'] == $fixedPage ? $v : $selected;
             $referer = url($v['url']) == $refererUrl ? $v : $referer;
+        }
+        $lastArr = array_diff($pidArr, array_filter(array_unique(array_map(function ($item) {
+            return $item['pid'];
+        }, $ruleList))));
+        foreach ($ruleList as $index => $item) {
+            if (in_array($item['id'], $lastArr)) {
+                unset($ruleList[$index]);
+            }
         }
         if ($selected == $referer) {
             $referer = [];

@@ -1,0 +1,42 @@
+---------------------------------------------------------------
+[ 2019-09-25T13:11:52+08:00 ] 192.168.1.144 POST 192.168.1.144:9999/api/goods/goods_list
+[è¿è¡Œæ—¶é—´ï¼š2.125270s] [åžåçŽ‡ï¼š0.47req/s] [å†…å­˜æ¶ˆè€—ï¼š2,494.23kb] [æ–‡ä»¶åŠ è½½ï¼š125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.017002s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'goods',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '767',
+  'content-type' => 'multipart/form-data; boundary=--------------------------728900585882053451040399',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.1.144:9999',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '3ca77214-979e-441c-908d-53d1be28716a',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'token' => '94711b17-95ae-4a0d-971d-3f8d24b346b6',
+  'goods_name' => 'ç¬¬ä¸€ä»¶å•†å“',
+  'type_id' => '2',
+  'content' => '',
+  'goods_price' => '5',
+  'type_name' => 'ç¬¬ä¸€ä¸ªåˆ†ç±»',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.011001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£
+[D:\WWW\last\thinkphp\library\think\db\Connection.php:295]

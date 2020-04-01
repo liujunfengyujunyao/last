@@ -1,0 +1,1 @@
+{"name":"123","category":"CatSeries","description":"","detail_img":["20200117\\9e6f38efca8e199daa9ae7cd96e837d7.jpg","20200117\\80359ecf76c94a87c9bf69650c5889b1.jpg"]}

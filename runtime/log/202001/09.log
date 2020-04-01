@@ -1,0 +1,1398 @@
+---------------------------------------------------------------
+[ 2020-01-09T09:20:07+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/index/home
+[运行时间：1.176150s] [吞吐率：0.85req/s] [内存消耗：2,826.85kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.023003s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Index->home[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.048506s ]
+[ sql ] [ SQL ] SELECT `machine_id` FROM `fa_machine` WHERE  `user_id` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.046505s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` BETWEEN 1577808000 AND 1580486399 LIMIT 1 [ RunTime:0.010002s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578499200 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578412800 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('') LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('')  AND `is_online` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T09:20:08+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.141518s] [吞吐率：7.07req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.037005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.017503s ]
+---------------------------------------------------------------
+[ 2020-01-09T09:24:13+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.134017s] [吞吐率：7.46req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.049507s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T09:24:21+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/test/test_list
+[运行时间：0.228529s] [吞吐率：4.38req/s] [内存消耗：2,940.09kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'test_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '120',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'machine_id' => '1',
+  'new' => 
+  array (
+    0 => 
+    array (
+      'lat' => '',
+      'lng' => '',
+      'index' => '',
+    ),
+  ),
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->test_list[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.069008s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` = '7d285fec-8292-46ae-b6ca-0cba347c8628' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.056507s ]
+[ sql ] [ SQL ] SELECT `id`,`location`,`goods_id`,`number`,`lat`,`lng` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T09:25:11+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/index/home
+[运行时间：0.109514s] [吞吐率：9.13req/s] [内存消耗：2,826.86kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Index->home[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.016002s ]
+[ sql ] [ SQL ] SELECT `machine_id` FROM `fa_machine` WHERE  `user_id` IS NULL [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` BETWEEN 1577808000 AND 1580486399 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578499200 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578412800 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('') LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('')  AND `is_online` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T09:25:43+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/index/home
+[运行时间：0.112514s] [吞吐率：8.89req/s] [内存消耗：2,826.86kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Index->home[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.016502s ]
+[ sql ] [ SQL ] SELECT `machine_id` FROM `fa_machine` WHERE  `user_id` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.019003s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` BETWEEN 1577808000 AND 1580486399 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578499200 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578412800 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('') LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('')  AND `is_online` = 1 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T10:02:57+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/index/home
+[运行时间：0.123515s] [吞吐率：8.10req/s] [内存消耗：2,826.86kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Index->home[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.018503s ]
+[ sql ] [ SQL ] SELECT `machine_id` FROM `fa_machine` WHERE  `user_id` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` BETWEEN 1577808000 AND 1580486399 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578499200 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578412800 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('') LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('')  AND `is_online` = 1 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T11:14:44+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/machine/check_list
+[运行时间：0.200025s] [吞吐率：5.00req/s] [内存消耗：2,925.87kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'check_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'id' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Machine->check_list[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.057508s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T11:23:28+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/machine/check_list
+[运行时间：0.078510s] [吞吐率：12.74req/s] [内存消耗：2,925.87kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'check_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'id' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Machine->check_list[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T11:31:45+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/machine/check_list
+[运行时间：0.079010s] [吞吐率：12.66req/s] [内存消耗：2,925.87kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'check_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'id' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Machine->check_list[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.015002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T11:39:35+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/machine/check_list
+[运行时间：0.156520s] [吞吐率：6.39req/s] [内存消耗：2,925.87kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'check_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'id' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Machine->check_list[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.066008s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.016503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T11:39:54+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/machine/check_list
+[运行时间：0.153520s] [吞吐率：6.51req/s] [内存消耗：2,925.87kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'check_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'id' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Machine->check_list[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.066509s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2020-01-09T11:46:27+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/machine/check_success
+[运行时间：0.258032s] [吞吐率：3.88req/s] [内存消耗：2,975.63kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'check_success',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '47',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'id' => '6',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Machine->check_success[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: nick[D:\WWW\last\application\api\controller\Machine.php:480]
+---------------------------------------------------------------
+[ 2020-01-09T11:46:42+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/machine/check_list
+[运行时间：0.097513s] [吞吐率：10.26req/s] [内存消耗：2,925.87kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'check_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '46',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'id' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Machine->check_list[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.018502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T11:46:47+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/machine/check_success
+[运行时间：0.171522s] [吞吐率：5.83req/s] [内存消耗：2,975.63kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009502s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'machine',
+    2 => 'check_success',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '47',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'id' => '6',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Machine->check_success[ D:\WWW\last\application\api\controller\Machine.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义变量: nick[D:\WWW\last\application\api\controller\Machine.php:480]
+---------------------------------------------------------------
+[ 2020-01-09T13:31:33+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：1.923744s] [吞吐率：0.52req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.070009s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.048507s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.045006s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.015502s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:33:21+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.088011s] [吞吐率：11.36req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.018503s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:34:55+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/client/client_list
+[运行时间：0.179523s] [吞吐率：5.57req/s] [内存消耗：2,561.20kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'client_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:34:59+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.116514s] [吞吐率：8.58req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:35:08+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/index/home
+[运行时间：0.190024s] [吞吐率：5.26req/s] [内存消耗：2,826.86kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Index->home[ D:\WWW\last\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.017502s ]
+[ sql ] [ SQL ] SELECT `machine_id` FROM `fa_machine` WHERE  `user_id` IS NULL [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.050506s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` BETWEEN 1577808000 AND 1580486399 LIMIT 1 [ RunTime:0.011501s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578499200 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(online_income) AS tp_sum FROM `fa_machine_day_statistics` WHERE  `machine_id` IN ('')  AND `stat_period` = 1578412800 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('') LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine` WHERE  `machine_id` IN ('')  AND `is_online` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:35:09+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.105013s] [吞吐率：9.52req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:45:55+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.229529s] [吞吐率：4.36req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.068008s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.004501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.078510s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:50:22+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：1.463686s] [吞吐率：0.68req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.081511s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.023503s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034004s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.017002s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:51:54+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.107013s] [吞吐率：9.34req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:53:57+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.084010s] [吞吐率：11.90req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.017002s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T13:57:04+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.107514s] [吞吐率：9.30req/s] [内存消耗：2,821.77kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.017002s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T14:00:59+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.108014s] [吞吐率：9.26req/s] [内存消耗：2,821.82kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '54',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'machine_id' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T14:01:11+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade
+[运行时间：0.481061s] [吞吐率：2.08req/s] [内存消耗：2,808.38kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'machine_id' => '2',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_app_version` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `fa_app_version` LIMIT 1 [ RunTime:0.005501s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_app_version` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_command_machine` [ RunTime:0.093012s ]
+[ sql ] [ SQL ] INSERT INTO `fa_command_machine` (`machine_id` , `msgtype` , `send_time` , `content`) VALUES (1 , 'us' , 1578549671 , '{\"nv\":\"qweqweqwe\",\"ad\":\"http:\\/\\/192.168.0.102:9999\\/\\\\version\\\\qweqweqwe.1\",\"dd\":\"af7cb71286b759a584118de14fb023be\",\"ps\":\"34268536\"}') [ RunTime:0.021502s ]
+---------------------------------------------------------------
+[ 2020-01-09T14:01:12+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.110014s] [吞吐率：9.09req/s] [内存消耗：2,821.82kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'machine_id' => '2',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.017002s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T14:02:38+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade
+[运行时间：0.148019s] [吞吐率：6.76req/s] [内存消耗：2,808.38kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'machine_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_app_version` [ RunTime:0.016002s ]
+[ sql ] [ SQL ] SELECT MAX(id) AS tp_max FROM `fa_app_version` LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_app_version` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_command_machine` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] INSERT INTO `fa_command_machine` (`machine_id` , `msgtype` , `send_time` , `content`) VALUES (1 , 'us' , 1578549758 , '{\"nv\":\"qweqweqwe\",\"ad\":\"http:\\/\\/192.168.0.102:9999\\/\\\\version\\\\qweqweqwe.1\",\"dd\":\"af7cb71286b759a584118de14fb023be\",\"ps\":\"34268536\"}') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-01-09T14:02:39+08:00 ] 192.168.0.102 POST liujunfeng.imwork.net:28246/api/version/machine_upgrade_list
+[运行时间：0.091011s] [吞吐率：10.99req/s] [内存消耗：2,821.82kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'version',
+    2 => 'machine_upgrade_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7d285fec-8292-46ae-b6ca-0cba347c8628',
+  'machine_id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Version->machine_upgrade_list[ D:\WWW\last\application\api\controller\Version.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '45a84b28d9de3eeaf20d95790a2d120fba99ddbe' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.015502s ]
+[ sql ] [ SQL ] SELECT `t1`.`machine_id`,`t1`.`machine_name`,`t1`.`soft_version`,`t1`.`upload_version_id`,t2.name as version_name FROM `fa_machine` `t1` LEFT JOIN `fa_app_version` `t2` ON `t1`.`upload_version_id`=`t2`.`id` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-01-09T17:23:14+08:00 ] 192.168.0.102 GET 192.168.0.102:9999/api/test/qew
+[运行时间：1.617706s] [吞吐率：0.62req/s] [内存消耗：2,919.80kb] [文件加载：121]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.033505s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'qew',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8uijrg671tcbndj87n4q85pui7; API_NAVBAR_STATUS=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.0.102:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.030004s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->qew[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025003s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.079010s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.017502s ]

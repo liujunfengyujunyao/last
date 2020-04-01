@@ -7,10 +7,17 @@ use app\common\library\Ems;
 use app\common\library\Sms;
 use fast\Random;
 use think\Validate;
+use think\Db;
 
 /**
  * 会员接口
  */
+header('Access-Control-Allow-Headers: Content-Type,Content-Length,Accept-Encoding,X-Requested-with, Origin, Authorization,access-control-request-headers'); // 设置允许自定义请求头的字段
+//header("Access-Control-Max-Age", "1800");
+header("Content-Type: text/html;charset=utf-8");
+header('Access-Control-Allow-Methods:POST,GET,OPTIONS,DELETE'); // 允许请求的类型
+header('Access-Control-Allow-Credentials: true'); // 设置是否允许发送 cookies
+header('Access-Control-Allow-Origin:*');
 class User extends Api
 {
     protected $noNeedLogin = ['login', 'mobilelogin', 'register', 'resetpwd', 'changeemail', 'changemobile', 'third'];
@@ -28,7 +35,12 @@ class User extends Api
     {
         $this->success('', ['welcome' => $this->auth->nickname]);
     }
-
+    public function test()
+    {
+        $rule_id = 1;
+        $res = DB::name('client_rule')->alias('t1')->join('client_auth ca',"ca.id in t1.auth_ids")->where('t1.id',$rule_id)->select();
+        halt($res);
+    }
     /**
      * 会员登录
      *
@@ -39,12 +51,18 @@ class User extends Api
     {
         $account = $this->request->request('account');
         $password = $this->request->request('password');
+
         if (!$account || !$password) {
-            $this->error(__('Invalid parameters'));
+            $this->error(__('无效参数'));
         }
-        $ret = $this->auth->login($account, $password);
+        $ret = $this->auth->login($account, $password);//application/common/library/auth.php
+
         if ($ret) {
             $data = ['userinfo' => $this->auth->getUserinfo()];
+            $id = $data['userinfo']['id'];
+            $rule_id = DB::name('user')->where('id',$id)->value('rule_id');
+
+            $data['rule_name'] =  DB::name('client_rule')->where('id',$rule_id)->value('rule_name');
             $this->success(__('Logged in successful'), $data);
         } else {
             $this->error($this->auth->getError());
@@ -72,6 +90,9 @@ class User extends Api
         }
         $user = \app\common\model\User::getByMobile($mobile);
         if ($user) {
+            if ($user->status != 'normal') {
+                $this->error(__('Account is locked'));
+            }
             //如果已经有账号则直接登录
             $ret = $this->auth->direct($user->id);
         } else {
@@ -309,5 +330,5 @@ class User extends Api
         }
     }
 
-
+    
 }

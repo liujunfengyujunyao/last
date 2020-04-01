@@ -7,7 +7,6 @@ use app\common\controller\Backend;
 use think\Config;
 use think\Hook;
 use think\Validate;
-use think\Session;
 
 /**
  * 后台首页
@@ -68,7 +67,7 @@ class Index extends Backend
             $rule = [
                 'username'  => 'require|length:3,30',
                 'password'  => 'require|length:3,30',
-                '__token__' => 'token',
+                '__token__' => 'require|token',
             ];
             $data = [
                 'username'  => $username,
@@ -102,7 +101,6 @@ class Index extends Backend
         }
         $background = Config::get('fastadmin.login_background');
         $background = stripos($background, 'http') === 0 ? $background : config('site.cdnurl') . $background;
-
         $this->view->assign('background', $background);
         $this->view->assign('title', __('Login'));
         Hook::listen("admin_login_init", $this->request);
@@ -117,12 +115,6 @@ class Index extends Backend
         $this->auth->logout();
         Hook::listen("admin_logout_after", $this->request);
         $this->success(__('Logout successful'), 'index/login');
-    }
-
-    public function test()
-    {
-        $uid = 1;
-        halt($this->config());
     }
 
 }

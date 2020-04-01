@@ -1,0 +1,522 @@
+---------------------------------------------------------------
+[ 2019-11-19T14:31:55+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/user/login
+[运行时间：1.808230s] [吞吐率：0.55req/s] [内存消耗：2,946.62kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '20',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'account' => '3',
+  'password' => '3',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.025003s ]
+[ info ] [ LANG ] D:\WWW\last\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\last\application\api\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026003s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.081010s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = '3' LIMIT 1 [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `successions`=1,`prevtime`=1573871084,`logintime`=1574145115,`token`='d204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',`updatetime`=1574145115  WHERE  `id` = 18 [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.037005s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('d2f19f06848a234e6433502ca8fe905b37156766' , 18 , 1574145115 , 1576737115) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `org_level` FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `rule_id` FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_rule` [ RunTime:0.064508s ]
+[ sql ] [ SQL ] SELECT `auth_ids` FROM `fa_client_rule` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_auth` [ RunTime:0.043006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_client_auth` WHERE  `id` IN (37,26,27,30) [ RunTime:0.016502s ]
+---------------------------------------------------------------
+[ 2019-11-19T14:31:58+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/delivery/machine_list
+[运行时间：0.276535s] [吞吐率：3.62req/s] [内存消耗：2,884.29kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'delivery',
+    2 => 'machine_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '47',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',
+  'key' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Delivery->machine_list[ D:\WWW\last\application\api\controller\Delivery.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.065009s ]
+[ sql ] [ SQL ] SELECT `machine_id`,`machine_name` FROM `fa_machine` WHERE  `user_id` = 2  AND `machine_name` LIKE '%%' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.077010s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 2 LIMIT 1 [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 11001 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 11001 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-19T14:32:10+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/delivery/machine_list
+[运行时间：0.153519s] [吞吐率：6.51req/s] [内存消耗：2,884.29kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'delivery',
+    2 => 'machine_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '47',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',
+  'key' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Delivery->machine_list[ D:\WWW\last\application\api\controller\Delivery.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT `machine_id`,`machine_name` FROM `fa_machine` WHERE  `user_id` = 2  AND `machine_name` LIKE '%%' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 11001 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 11001 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-19T14:32:12+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/delivery/delivery_list
+[运行时间：0.363546s] [吞吐率：2.75req/s] [内存消耗：2,925.45kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'delivery',
+    2 => 'delivery_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '66',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',
+  'machine_id' => '2',
+  'key' => '',
+  'time' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Delivery->delivery_list[ D:\WWW\last\application\api\controller\Delivery.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.094012s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]method not exist:think\db\Query->filed[D:\WWW\last\thinkphp\library\think\db\Query.php:103]
+---------------------------------------------------------------
+[ 2019-11-19T14:32:41+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/delivery/machine_list
+[运行时间：0.169522s] [吞吐率：5.90req/s] [内存消耗：2,884.29kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'delivery',
+    2 => 'machine_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '47',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',
+  'key' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Delivery->machine_list[ D:\WWW\last\application\api\controller\Delivery.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.035504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.020502s ]
+[ sql ] [ SQL ] SELECT `machine_id`,`machine_name` FROM `fa_machine` WHERE  `user_id` = 2  AND `machine_name` LIKE '%%' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.037505s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_machine_conf` WHERE  `machine_id` = 11001 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `machine_id` = 11001 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-19T14:32:46+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/delivery/step_two
+[运行时间：0.218028s] [吞吐率：4.59req/s] [内存消耗：2,869.66kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'delivery',
+    2 => 'step_two',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',
+  'machine_id' => '2',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Delivery->step_two[ D:\WWW\last\application\api\controller\Delivery.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.055007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT `t1`.`location`,`t1`.`number`,`t2`.`goods_name`,t1.id as conf_id FROM `fa_machine_conf` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`machine_id` = '2' [ RunTime:0.043006s ]
+---------------------------------------------------------------
+[ 2019-11-19T14:32:47+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/delivery/select_list
+[运行时间：0.261533s] [吞吐率：3.82req/s] [内存消耗：2,877.45kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'delivery',
+    2 => 'select_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',
+  'machine_id' => '2',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Delivery->select_list[ D:\WWW\last\application\api\controller\Delivery.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_stock` [ RunTime:0.070009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_stock` WHERE  `pid` = 18 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.057008s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_inventory` WHERE  `stock_id` = 4 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name` FROM `fa_client_goods` WHERE  `goods_id` IN (2,3) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `number` FROM `fa_inventory` WHERE  `goods_id` = 2  AND `stock_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `number` FROM `fa_inventory` WHERE  `goods_id` = 3  AND `stock_id` = 4 LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-11-19T14:33:43+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/delivery/step_two
+[运行时间：0.198025s] [吞吐率：5.05req/s] [内存消耗：2,869.66kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'delivery',
+    2 => 'step_two',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',
+  'machine_id' => '2',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Delivery->step_two[ D:\WWW\last\application\api\controller\Delivery.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.043006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.032005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT `t1`.`location`,`t1`.`number`,`t2`.`goods_name`,t1.id as conf_id FROM `fa_machine_conf` `t1` LEFT JOIN `fa_client_goods` `t2` ON `t1`.`goods_id`=`t2`.`goods_id` WHERE  `t1`.`machine_id` = '2' [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-19T14:33:44+08:00 ] 192.168.1.115 POST 192.168.1.144:9999/api/delivery/select_list
+[运行时间：0.184524s] [吞吐率：5.42req/s] [内存消耗：2,877.45kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'delivery',
+    2 => 'select_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.115:8080/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'origin' => 'http://192.168.1.115:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '55',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'd204ff1b-eacd-4e5b-b365-e4a6a1d2ea1d',
+  'machine_id' => '2',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Delivery->select_list[ D:\WWW\last\application\api\controller\Delivery.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd2f19f06848a234e6433502ca8fe905b37156766' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_stock` [ RunTime:0.021502s ]
+[ sql ] [ SQL ] SELECT `id` FROM `fa_stock` WHERE  `pid` = 18 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_inventory` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_inventory` WHERE  `stock_id` = 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`goods_name` FROM `fa_client_goods` WHERE  `goods_id` IN (2,3) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `number` FROM `fa_inventory` WHERE  `goods_id` = 2  AND `stock_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `number` FROM `fa_inventory` WHERE  `goods_id` = 3  AND `stock_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-19T16:04:46+08:00 ] 192.168.1.145 GET 192.168.1.144:9999/api/test/xm
+[运行时间：4.939628s] [吞吐率：0.20req/s] [内存消耗：2,854.53kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.039004s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'xm',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.036504s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->xm[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.057007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-19T16:04:46+08:00 ] 192.168.1.145 GET 192.168.1.144:9999/favicon.ico
+[运行时间：0.311540s] [吞吐率：3.21req/s] [内存消耗：1,600.16kb] [文件加载：107]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.144:9999/api/test/xm',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

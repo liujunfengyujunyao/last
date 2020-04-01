@@ -134,4 +134,9 @@ class User extends Model
         }
         return $level;
     }
+
+    public function test()
+    {
+        return 2;
+    }
 }

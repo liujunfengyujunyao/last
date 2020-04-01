@@ -1,0 +1,3559 @@
+---------------------------------------------------------------
+[ 2019-11-12T19:48:35+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.123516s] [吞吐率：8.10req/s] [内存消耗：2,629.14kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.036505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:48:35+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.219028s] [吞吐率：4.57req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559330,
+    ),
+    'O' => '6925FCD47A61704D8DA1C1421FDA0F7B94C4CD11',
+  ),
+  'ip' => '123.125.5.211:64885',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.018502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559315,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.112514s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.042006s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:48:40+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.903614s] [吞吐率：1.11req/s] [内存消耗：2,601.00kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '122',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'br',
+    'P' => 
+    array (
+      'tl' => '0.01',
+      'pm' => 'ap',
+      'gl' => 
+      array (
+        0 => 
+        array (
+          0 => 1,
+          1 => 1,
+        ),
+      ),
+    ),
+    'O' => '1573559335',
+  ),
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.028504s ]
+[ sql ] [ SQL ] SELECT `is_online` FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.036505s ]
+[ sql ] [ SQL ] INSERT INTO `fa_order` (`unique_order_id` , `amount` , `type` , `machine_id` , `createtime` , `serial_number` , `goods_list`) VALUES ('1001201911120000001269539406' , 0.01 , 1 , 11000 , 1573559320 , '1573559335' , '[[1,1]]') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:48:48+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server/notify
+[运行时间：0.208526s] [吞吐率：4.80req/s] [内存消耗：2,605.84kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+  'content-length' => '1712',
+  'user-agent' => 'Apache-HttpClient/4.4.1',
+  'accept-charset' => 'UTF-8',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'response' => 'AGNSIJPyhSvWdKAgxnQ2CdGLJh2NeUO44knIBMToACKzx5MfBfAvomKtB0ewY2P5AQdoMKu74uqHgP5IfWpGJPmjoAahmaLfC-VvZeO5PmviSrD5VudbHdANKyH4R8snZoL37Ih83MTdvXweuyWVbvj-1xZfGQgebSJ7pRMmBcge5vXZF6puPHSksSBHdKS3dWlF4FEbJEjE3zg9x0XbeevpH9guuzCnPfTfhYWw0LjND4odFZiYRUpsDssZXMN_A7yeqQ-JzcdBDvVQeCT6EuwVFCRQBrtZN3_vzNYF52pwDAUNFRWTcLQcyrkLzTisn-su9ZiWMkI02pR7_pOozQ$ufByJuE7QqmAC2B5cGfLuJ4qOycyFJG-98eesKjnnalMPiUU3X0I4aEnUB3uP1RjJcfZ3ntKMNi3g5jcj_XMDMjHn_29K9B2FdD3Y5Vt_HY5tyOtaJFQ76Vf24tbQXB7IJ-Y5HAlm3W5Q-OCRorOoXP607XrDx0e14GWG76FPJ5gHfvTyedzW9LuqdocZdhpBjk-Qk35QV5w_-jrOeLMdg31MWULQTEnWh9zAl8u6ZmYWdvtX390rcbJ58Y2nR89UUVZt5cEVeEI8fGUZs0Ger3KQT9vEqpKo2JUKOgVfwz7z4UqOXo7CyQgVC6cuTRS_cb-s53ZSkR_PhA-jn6FfxyA2X7UUU4PL_S5qSFG8PKqfcbnuBJsrvRa3m9MEjsI1fhArSGF424Fcllak22kk-FRrhCb05CbotfYtMtf8oZmlGSrWgx_Aag4z_ow8GoKAYHz7A1pdMX3UFwocVw2w1Aas72CUIoSvudxaaoHKrFiSIUhDGbdmmyN-01j2Xpn5h47TMUhX55QztOCL0O222wR0x3YsBfFNPtLxSDbtsRt02pqvT7z6UNL_81wkNoKKpWFv7YJFn9H8jQY73Hj8W3b6Cj6V0doZsTsUWf51pkNPB2tH_Uflq7OoBJHlHehiu6-tCdZ0Gzmsc0njEn98WMaovGjwbdVi_qRPnHsvA3MRxfGeYJTh6TxmijA9byQdA6ohnfrHjXEhmw8FOR8ghxbZdWWZvajZ95TBBOXBk5Tb9vPnVqte1T7fd5gQ-sBZ1kzWjSmdaZ5waS4_8cAGNWIOUPCvs8icQOOlteFOfFlnEd-HMf3clTcTsS-aUvs4M-gYfsE8AQN4sJCvoa54fmwAziOXcXrNOvtAbK4yB5BH6Q_Nll8Dyjsx4MaD_VdxGfI32vH6_F2N6C-rBypwUz0ndlsq-DZWCS69Ao0JazwJtbp-ECJd4GoxVbh6EB5PGbp_pS-Je0XnmMEPp6z_SmQL9k3hC9yt6SidgoKdCexAV0ALVCVwv9TXQJlVbc4mK9anCKoMIHvyYf66Toru5Ix_-ptAdk7KXEzqcH1IRnPAaoCtSgz4LPDfWLlYwJOo6FscFxcmhaf4rI7t5C8BuIA3ttfDtumzPsKHnCkFXO3mdfnhODdJ_AqgZIjf3o52CC0tzR5cZ6jFnpYk6WAO9ifTeMXEg_iXL-3bOmDt9-ldE2p8gC6urifAGO4VPkdoWkUhDRAOBI45YB5Yt7AZUCnVWoJKaxXOPuWdOiJY1GApD4TcK2JDPTt_iOPBDcd8uwWPUBIZHvf1-DVxRIL7g$AES$SHA256',
+  'customerIdentification' => 'OPR:10026912451',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->notify[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.035505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `unique_order_id` = '1001201911120000001269539406' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_order`  SET `status`=1,`paytime`=1573559328  WHERE  `unique_order_id` = '1001201911120000001269539406' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_day_statistics`  SET `online_income`=`online_income`+0.01  WHERE  `machine_id` = 11000  AND `stat_period` = 1573488000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_conf` WHERE  `goods_id` = 1  AND `machine_id` = 11000  AND `number` >= 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_conf`  SET `number`=`number`-1  WHERE  `id` = 5 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:49:06+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.065008s] [吞吐率：15.38req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.025504s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:49:11+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.357045s] [吞吐率：2.80req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559366,
+    ),
+    'O' => '4D1B1503B89EA69BAC0AB719E449B3B27D56ED79',
+  ),
+  'ip' => '123.125.5.211:64893',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.160521s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559351,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.050006s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.069508s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:49:39+08:00 ] 192.168.1.144 GET 192.168.1.144:9999/api/test/js
+[运行时间：0.131517s] [吞吐率：7.60req/s] [内存消耗：2,783.16kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'test',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_06e9734f33e7ff39eccc218a7043f30f=1565955353; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1569297680,1569301951,1569736776,1571373133; PHPSESSID=bivl6i2hga050nfarik0i4vg36; API_NAVBAR_STATUS=1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.144:9999',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Test->js[ D:\WWW\last\application\api\controller\Test.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.034505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_conf` WHERE  `goods_id` = 4  AND `machine_id` = 11000  AND `number` >= 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_conf`  SET `number`=`number`-1  WHERE  `id` = 8 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:49:42+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.075010s] [吞吐率：13.33req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.026503s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:49:46+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.123015s] [吞吐率：8.13req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559402,
+    ),
+    'O' => '9ACAC45E68B349ED0941FC3E47E63E40BE02D9D5',
+  ),
+  'ip' => '123.125.5.211:64902',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.027504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559386,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:50:17+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.063008s] [吞吐率：15.87req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.024003s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:50:22+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.135517s] [吞吐率：7.38req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559437,
+    ),
+    'O' => 'FA536EB76087FCF728E7B52934F0E5BA4457BFBB',
+  ),
+  'ip' => '123.125.5.211:64909',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559422,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.047506s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:50:33+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.060508s] [吞吐率：16.53req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.023503s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:50:41+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.099013s] [吞吐率：10.10req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:50:41+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.112015s] [吞吐率：8.93req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559457,
+    ),
+    'O' => '42D0C4025187272EF1BA50A4BA7F5979FC82C5F7',
+  ),
+  'ip' => '123.125.5.211:64913',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.016002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559441,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:50:51+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：1.840733s] [吞吐率：0.54req/s] [内存消耗：2,601.00kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '122',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'br',
+    'P' => 
+    array (
+      'tl' => '0.02',
+      'pm' => 'ap',
+      'gl' => 
+      array (
+        0 => 
+        array (
+          0 => 4,
+          1 => 1,
+        ),
+      ),
+    ),
+    'O' => '1573559464',
+  ),
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT `is_online` FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_order` (`unique_order_id` , `amount` , `type` , `machine_id` , `createtime` , `serial_number` , `goods_list`) VALUES ('1001201911120000001269544477' , 0.02 , 1 , 11000 , 1573559451 , '1573559464' , '[[4,1]]') [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:50:57+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server/notify
+[运行时间：0.219028s] [吞吐率：4.57req/s] [内存消耗：2,605.84kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+  'content-length' => '1712',
+  'user-agent' => 'Apache-HttpClient/4.4.1',
+  'accept-charset' => 'UTF-8',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'response' => 'mOaHLQ3ruEEUIomoCGBVdSkBkNIyy-meogRWVKRu7T7MMCKlMxYGiZfjHFdz611Rs2GP_GQ9on-H7XHubTqUDLPJaK8ixbaSKij4gthl_-oGnDiAd8yZV_vHl8-bsYfZeuun2j3LBDjxBgUjnakTrPIHZ4Us0POIH3rcg4HsVuNgLsO41EutlpZmCkUghgsuSqX1JR1FjnfnUSyry4nLrh65U37jN8gFTAvuGbpxpGl0I9ZE_7Ey3d_LRq9cME5NO0KlC9XV4MGQG2UV-q4UlQOD4hchvgK4oAcvfb0B_ezjSsAYeiiS2hxvTkc4wxKnpWeHdn16DMjoPgNWXwWb7Q$h5MAcdiK49q3BQ9OPAYyM9KfT-FVYjq8d7dAoqcgHyCXAHaahL849LjgRYehEprtVKjwKxFYupEZykM584VgRsnQAvnPNm9ygs-sO2sufj2e4aRARYFqHlccD_Rn5OqAMPkwy_t5RJu8iAa1mVcK8W58bOpOH1yRXBxXMALxDS8-D9PhP9dUcuyXp3GCNqehD6sC9pSmkM6zLTbwc1gW2VPNByTYZ3yNp6hG3y2XXAotjVwdZ0Jjro_F5YBtvQI2YIDIeLpnqYJC7HDIqfE0sDN7L-jbQynqGRloDqvBSODt6y_xMy_ROFxBz7djo5W2NZwRb0b7Vz-szEODvDYWdt_VFlvYIREwj30rl_RaRpM0qGNiUHeVAVmKo4ErrjMfyBr0tuCzyVUHmBMYpvbOg_o4EKvw7O2I3VCcbDk89W3WbRd5pS5Sg7JRT3vv-ooFcNNdNgwdMFCHB2LhJwy-p1ZwHB6QPgUlmSYavJtT0BgKYUUEwagqTilsJ4gR7Fwi0R1wPjL-SSwbrw7pgy2-pxvcRiaEeJ6ZdwH2xxmeyZKioefz9nEDCzcc_Att5NJlRBpMt1KQETWcIjR9sy0GyZix0JqlZ0aJyIyXz_TmmdJuFmbHk4eh2DCjZyH_vmbi322S0TguvAkkzW8l-SrxX1WBxvlER5X9ccdsSmDzJDPp4YDBpaOfK0w7MhEcMbiXIX5edF7SVKFYUzfZNmE6RtXh6zgi17dS6J8cXBldv6pc6xEXDabXT2cwV5nitAVdpnB8lNNEAherbH9LOhPijtwTCwIBRJQ-iHcz7_jsFL_A9Q-OB1tNy_ww-ffnmGniZnVm0HJBRnkHGLxsgFx0xfyqDPCUOZVrtrQ4DOpYtpssqxwrrokqkCJQ4D0nCK0L6jt_jeUcnfLLXJxT7geXoQa1f0bvSXhJwCfqy9BmrSMuF_LUJS2MYRxWJHjf39xzsXh3xs2ikqJ8cn1gVfQdI4B0wDJ9PntUqggPg6ZdGDG-uwuAhQZ8TkJGse04PzkcqKBp2ydvpuXCaxqVc_4yvRg5DSIekX3iOI0SaF2MkcktPeVYySkzLtNBxbq-XYSuyIoUrZfciIajg6MC5o3FnPWi3qGGLV3W3lw38XqKB88VTw-_GOXzTo-rnvTsHepWSstMoT3DilVISwxT6tUMjaLzcrga2h4QxvoYAzF41Y_dZ7rw7gJxPz2GoOuzQxhY_L_brtfD2MN47JWkYBTmobp4as8xcisCJm68XbAWprSEzdMD-cYMhoyNcyRT9EdlfBXMzAb5j93nx8koo3R5pQ$AES$SHA256',
+  'customerIdentification' => 'OPR:10026912451',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->notify[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `unique_order_id` = '1001201911120000001269544477' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_order`  SET `status`=1,`paytime`=1573559457  WHERE  `unique_order_id` = '1001201911120000001269544477' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_day_statistics`  SET `online_income`=`online_income`+0.02  WHERE  `machine_id` = 11000  AND `stat_period` = 1573488000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `id` = 29 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.027004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_conf` WHERE  `goods_id` = 4  AND `machine_id` = 11000  AND `number` >= 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_conf`  SET `number`=`number`-1  WHERE  `id` = 8 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:51:13+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.070509s] [吞吐率：14.18req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.032004s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:51:17+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.127017s] [吞吐率：7.87req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559493,
+    ),
+    'O' => '6BBC98CB041E870822EC434673869CB2159CEA7A',
+  ),
+  'ip' => '123.125.5.211:64952',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559477,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:51:38+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.083511s] [吞吐率：11.97req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.028004s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:52:51+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.119015s] [吞吐率：8.40req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:52:51+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.128516s] [吞吐率：7.78req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559587,
+    ),
+    'O' => '1C0FB302B3F93CB162EA903C1EE16E4685AA94D6',
+  ),
+  'ip' => '123.125.5.211:64976',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.019003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559571,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.030504s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:53:03+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.140517s] [吞吐率：7.12req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.080010s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:53:44+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.131516s] [吞吐率：7.60req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.037005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:53:45+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.131516s] [吞吐率：7.60req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559640,
+    ),
+    'O' => 'EC748F2FCDB68EE8ADAB063BFE30FEDFA7CB6037',
+  ),
+  'ip' => '123.125.5.211:64997',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559625,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:53:55+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.098012s] [吞吐率：10.20req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.035504s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:54:02+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.127517s] [吞吐率：7.84req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.045005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:54:02+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.182523s] [吞吐率：5.48req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559657,
+    ),
+    'O' => '4FEFA57F00F6E65FC78913E097AAD02475EEEF1B',
+  ),
+  'ip' => '123.125.5.211:65002',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.026503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559642,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.049006s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.041505s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:54:09+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.072009s] [吞吐率：13.89req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.025503s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:55:34+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.132517s] [吞吐率：7.55req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.033005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.043505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:55:34+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.112014s] [吞吐率：8.93req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559750,
+    ),
+    'O' => '440C06E9A1C954D5DC60F43754ECFD22B5ADAF11',
+  ),
+  'ip' => '123.125.5.211:65021',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.017002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559734,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:55:43+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.111514s] [吞吐率：8.97req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.061507s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:56:38+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.141518s] [吞吐率：7.07req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.050506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:56:39+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.153519s] [吞吐率：6.51req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559814,
+    ),
+    'O' => '8963C84E754CD307BC9A96D6F8CEC5843758E6B8',
+  ),
+  'ip' => '123.125.5.211:65032',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559798,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.035005s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:57:06+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.082011s] [吞吐率：12.19req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.040505s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:58:49+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.125516s] [吞吐率：7.97req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.036505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:58:49+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.141018s] [吞吐率：7.09req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559945,
+    ),
+    'O' => '7C876D5F78AD79F29DB362715111CAD921A5CAFD',
+  ),
+  'ip' => '123.125.5.211:65056',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.028003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559929,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.021502s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:59:20+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.123016s] [吞吐率：8.13req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.063508s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T19:59:26+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.111514s] [吞吐率：8.97req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.026504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:59:27+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.159520s] [吞吐率：6.27req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573559982,
+    ),
+    'O' => '0457AA0CBB461917B7A8859C52E52998A50AA06F',
+  ),
+  'ip' => '123.125.5.211:65064',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.025504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573559967,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.049006s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.026504s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:59:32+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.962123s] [吞吐率：1.04req/s] [内存消耗：2,601.00kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '122',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'br',
+    'P' => 
+    array (
+      'tl' => '0.01',
+      'pm' => 'ap',
+      'gl' => 
+      array (
+        0 => 
+        array (
+          0 => 1,
+          1 => 1,
+        ),
+      ),
+    ),
+    'O' => '1573559987',
+  ),
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.073509s ]
+[ sql ] [ SQL ] SELECT `is_online` FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_order` (`unique_order_id` , `amount` , `type` , `machine_id` , `createtime` , `serial_number` , `goods_list`) VALUES ('1001201911120000001269564363' , 0.01 , 1 , 11000 , 1573559972 , '1573559987' , '[[1,1]]') [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:59:44+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server/notify
+[运行时间：0.646582s] [吞吐率：1.55req/s] [内存消耗：2,605.84kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+  'content-length' => '1712',
+  'user-agent' => 'Apache-HttpClient/4.4.1',
+  'accept-charset' => 'UTF-8',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'response' => 'l_3nRVhkopYb6V7rsVc2v87GnoINo3nifLTnpbyiLKO3-vOjrbp7e4n8Tdv6y7wgFx4Ru9HN32W1erwidGVKdvM0ykJY5-anqs3CotKX7Oy5jWCPlgrfkc0RQknGBKSiMtCB2T9Ly7kzFLKMtr6d46p-L0gnf0UROnFiFrzPupQvn4X-E3mU7HpoMu9WNEswv_coaZshVZFy8dEQgrt2KEWvU4vL2dtKS4nX3FoIkvnftjpa7Hu2cbilQvrx4F_9tBKAz6zoCmqSKPgDRANbsoq7DrssNZVYQ4K7Sn8NLM0ogfbigpjY6SxrcDxqJ5PhN040-yo_x0qu9R69TApZkw$rbDYNAOG4kD1uai-HcJAnGslNEkHri6Ryj3u_KzdlsYSU9K5cAERns4j8cgYSbwSt-LxeZNRhEaNYfBkuZrcQl2kNOAmFiw2joDBeBRZWnE_qfYxluVZ5_SLTE6oRL0n18Kt35xbqNoJQMBHyrVL6QxLWmbe3AjfVee-Fn9jCOiMb98AE_grQCC1xjVORzJIMo3aQzJYXpQgqD3jFMU2quGKmA__gcIafFV-jc1cbJT4pvuCCtKIlAOjh1dkZ2_DJ1sqM4CmenF4CLYES0TQwR8XGZIcRhgm1PVVxCo896tYMcHpL7ucd1K1k6iemt4y7I5lmAXkXyEUCI7xjTqjeSlmUxhLHNt6GsirkYCtCXa7QmuRzqoyVQKbn4RODAR0827lpwuooGbPtym2H5j5ynymD0VHn08YDOXnDRoHHgD2Px_MYD056GWsORtMR5cCBR9zhdhqyeBeeg5_T5ixb8M1AvJHJmWBkmfDPQw_TFgGJ2pxOGaDpj28MHgfuUyyIQPL_kuY0HY0YQ9RMJjM3r0NDAx2HDWhmvT7JIRhvdNnvM-pIpp5gauYU8baxFtNT1pG11xa4s9QtelLaulJVaikN9E34fqPtYfh_09Jz9PyGTuRhFvWGuEDajS2q6L9cLG3aJ-HjNWGpuKIaD3Ti8Pm1CsB6WkHCXP9NpFoUMhS_CL7265LdH_SRUs3lligrd_Puksm7J24SlBfRPYeE5lWfLX-vtE5bEjxhUoyLN1GyQkXqVe_GxdoJ-_mt2lZNAtP1wzZmIsvG0qgM_yH3O_Y3awUv6jhhlMjGz5eclglbjCXIWrNWb2E_dx8w1LHeFE15rNriJYZx23x54of4kxp-9k52Q8dq-IdkdlmgllfQBEWTq7KNSWUDyZTYxhRvbOgVMwMgEfga87W0NDzMiiRwV4-yWLgjHFny2QJHseo2eJtXpL1zHJlMI3sWNUdGPnWuibib4LEosq0sRIRuF9qRo-1_Do2I-kueCckyE7KYLc8mx5ZJDWYc0N_UvFTL0Zm2PNQb292yOOKpgXtaaPgLFeaiAJVNp_c0leWV8LAcyi5OFa89v0vqcCwygASEM_aASDwM4GbFwoj3NTZc79bIIw1jrO9Ulbxf5CGPmN4ouncpGQH3SsIo2pvc5MMdVA3_kaw7iXEYDbqyCBQsaWPWCPZNgi9BAdSLFVpCQeYwdSO8_aV4uIo_vPqbis9lRf8elRCa9isYs1iylWaonZ4jmYyGwzpAqF106NZ_XbsfVcA939-gssPa8JfQ9PZy7VVdps1uwgp55d72rOxDw$AES$SHA256',
+  'customerIdentification' => 'OPR:10026912451',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ RUN ] app\api\controller\Server->notify[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.026503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `unique_order_id` = '1001201911120000001269564363' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_order`  SET `status`=1,`paytime`=1573559984  WHERE  `unique_order_id` = '1001201911120000001269564363' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_day_statistics`  SET `online_income`=`online_income`+0.01  WHERE  `machine_id` = 11000  AND `stat_period` = 1573488000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_conf` WHERE  `goods_id` = 1  AND `machine_id` = 11000  AND `number` >= 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_conf`  SET `number`=`number`-1  WHERE  `id` = 5 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T19:59:57+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.116014s] [吞吐率：8.62req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.055507s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:00:03+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.261533s] [吞吐率：3.82req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573560018,
+    ),
+    'O' => 'D840646992C27C0484BA497AB63E1AAAA4198334',
+  ),
+  'ip' => '123.125.5.211:65074',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.048006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573560003,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.078010s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.069509s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:00:14+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.096012s] [吞吐率：10.42req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011502s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001501s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.032004s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:00:53+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.200026s] [吞吐率：5.00req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007501s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.056507s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.046006s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:00:54+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.131017s] [吞吐率：7.63req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573560069,
+    ),
+    'O' => '3E8F4AADB9E929BA6904E72CFCD83E62E44574F0',
+  ),
+  'ip' => '123.125.5.211:65085',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.026503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573560054,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.027504s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:00:54+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.070009s] [吞吐率：14.28req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.017502s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:02:25+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.112514s] [吞吐率：8.89req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.028503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:02:26+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.141518s] [吞吐率：7.07req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573560161,
+    ),
+    'O' => 'E1ABA2A68E956C0BDBC70B9BE0E462FE5C034D02',
+  ),
+  'ip' => '123.125.5.211:65110',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573560145,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.035505s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:02:34+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.075510s] [吞吐率：13.24req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.029004s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:02:45+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.121015s] [吞吐率：8.26req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.032504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:02:45+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.157020s] [吞吐率：6.37req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573560180,
+    ),
+    'O' => '0E683803EAA99440555DCE332D08926DD28D4A6E',
+  ),
+  'ip' => '123.125.5.211:65117',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.028504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573560165,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.038505s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.027003s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:02:51+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：1.815231s] [吞吐率：0.55req/s] [内存消耗：2,601.00kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '122',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'br',
+    'P' => 
+    array (
+      'tl' => '0.01',
+      'pm' => 'ap',
+      'gl' => 
+      array (
+        0 => 
+        array (
+          0 => 1,
+          1 => 1,
+        ),
+      ),
+    ),
+    'O' => '1573560185',
+  ),
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.048506s ]
+[ sql ] [ SQL ] SELECT `is_online` FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.041005s ]
+[ sql ] [ SQL ] INSERT INTO `fa_order` (`unique_order_id` , `amount` , `type` , `machine_id` , `createtime` , `serial_number` , `goods_list`) VALUES ('1001201911120000001269571837' , 0.01 , 1 , 11000 , 1573560171 , '1573560185' , '[[1,1]]') [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:03:00+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server/notify
+[运行时间：0.723092s] [吞吐率：1.38req/s] [内存消耗：2,605.84kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+  'content-length' => '1712',
+  'user-agent' => 'Apache-HttpClient/4.4.1',
+  'accept-charset' => 'UTF-8',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'response' => 'CReZsAStndNzWRgkxC9RjDpyFTncHzsQ2Udfyu22NJ2bdgEDafMMLmRHcAxMY9xqpKweHXtw-F74WVzSoKThk1oukHSAsgyNRoDMM83kMOFOQT8E9iXf_SARkXUi_s7cBxI60RAzeo1UMoX4jRspJeigFt1bW-W0Z74WFRv_KrmkhScTGigwF-u69uwIJBFWZ6vrHagAJn9A5Dkq5U58UDoV4NnsLkhkZKpEkfxW4HBGrx_-gyE10i1ANBLIE4hWToOF4FaphrKFe9Q_tzIYZdEJzIbSId_pxOyYG1joB0x5GQKCQLYfsacxchUZAJOa6tumSRVTYbTzpJcGJDDe6A$DRXqQuXv3_v4qhJsGq7Xke_2uRqZlelHhLIfEME4-ICyT9y1_PDsW6f_zFqn51VA0YjcjKm2IPMly-xAXDx0ugVeBq0IO9Y7ezV3252UcAbaadCryddb146Ri5EBG2_UYpFcsbyxl47MrRhKBvJAV4JyN3XPkXERJRNHzlO7qTj3Oeh-rA7l7N6uUJnRNu3svfC2nf3EUwAyJZmd96vUM_QHO_ER3Skq0WyJNJo_QrGR7LJssAdxIdAWIwiQfx3VaUorEk-yxj5OWkgPveHzje0RtKc3ZbhPNC_bcRITNFT3nvz6jsvG6ey0v5V_7j5qHnhmgThtLBTz4h7tFI8wthJFRnMovkaT5ZH2QcpdAbvjRgrQnpra7M74rvhk6TUnVBp9IzdI4vfqcDQzRmFS0f_MxgtHwBqKaHosehPn0L1q8E61cgyJ1d9-U1XAM3ut7Cyqdis0LsKQIdOXeeWQDVbL2uOhnJds_yVSyOoR8UEhFrN1iAwJORiXI318bLTTlCHv5kFgOqs1BAJZ65l2sjJXEajhrANPy3we-Wd8zQ5S4Fd-S0qTkTjhdLjoZW0efRLVAP2QWItZj6i_Pas6-1SCFwUS2iRQ-31gQbJ4Phz3Vj3BMqYNgdndsy9SKXDjPUI4vkBX8mrb8cVgsnw0-sWCYw-H1_E_hElE5r1qYp1hALNfaR3kmygvpZtrmdu4XSLYwo3RUVN7Ec_HqmzUQA1fqTLrhL52eJzesVh1UfE8ncx8TzOVTkPXAh4YsfCZ-SkRYN5ItADaEx9QY7ZBPT3yzr9b0Cchpvgw5lpJBt51dxuGLPWcf0Jm1L1oKI5VGUBGUtnwbSGhKIEklZV01CWqkMXfszcmE0Fakb6KJc0a4TXUSaGe7l288uD-YpaoxaL7ElO1gj-ezvlK8t4HdY0FaGJG1I6tnCcBJAap-W3PLB_YSot35z-DFzJOoAqb8SG2G8NqwCG7I4xcWaycJ75ckyuDqJOfcYhKuqusakIvd7_RDk1WEJee04Ru3AWkToB8RBhch_Fv9Fx-JZhsPCWNz8azKt7jq3AYZFeSN_UEK8S7ZL2ItD84KiqTVmHPORzT3NmZySJqeSjvOUy32TZ0l5vkhzOgWnQHKcZnycyOfyPzrsVoHiOQiZ0twGG4lNuZ06KtlXXoq5Rd8QCXtk4AKK-JFfQgAZaf1pyEDG16d8h_jeAny1svxn7-UWbCdPq_5jORLM9QO_G8133zVCgKh89GN9kxivNzBTt9s59WKWzg_ORXytn955-1CO24YJzAzftKFecdQR0_LPE1YQ$AES$SHA256',
+  'customerIdentification' => 'OPR:10026912451',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->notify[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.048506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `unique_order_id` = '1001201911120000001269571837' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_order`  SET `status`=1,`paytime`=1573560180  WHERE  `unique_order_id` = '1001201911120000001269571837' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.024503s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_day_statistics`  SET `online_income`=`online_income`+0.01  WHERE  `machine_id` = 11000  AND `stat_period` = 1573488000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.026004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_conf` WHERE  `goods_id` = 1  AND `machine_id` = 11000  AND `number` >= 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_conf`  SET `number`=`number`-1  WHERE  `id` = 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:03:16+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.098013s] [吞吐率：10.20req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.050506s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:03:21+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.119515s] [吞吐率：8.37req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573560216,
+    ),
+    'O' => 'AF831580FDD5386360CB3EB73E6C87B56ECB6E33',
+  ),
+  'ip' => '123.125.5.211:65125',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.034504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573560201,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:03:52+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.095512s] [吞吐率：10.47req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.036505s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:04:46+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.131516s] [吞吐率：7.60req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.040005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.037505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:04:47+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.137517s] [吞吐率：7.27req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573560302,
+    ),
+    'O' => '788BCF2945E09AED6F9F215A0D6DE705B17639A5',
+  ),
+  'ip' => '123.125.5.211:65145',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573560286,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.033504s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:04:51+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.102013s] [吞吐率：9.80req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.049006s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:05:02+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.116014s] [吞吐率：8.62req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.043506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:05:02+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.148019s] [吞吐率：6.76req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573560317,
+    ),
+    'O' => '4423FE5E430D20BEB0A3ED86216D5E92E4CDEA5F',
+  ),
+  'ip' => '123.125.5.211:65151',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573560302,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:05:09+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：1.752722s] [吞吐率：0.57req/s] [内存消耗：2,601.00kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '122',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'br',
+    'P' => 
+    array (
+      'tl' => '0.01',
+      'pm' => 'ap',
+      'gl' => 
+      array (
+        0 => 
+        array (
+          0 => 1,
+          1 => 1,
+        ),
+      ),
+    ),
+    'O' => '1573560323',
+  ),
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT `is_online` FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] INSERT INTO `fa_order` (`unique_order_id` , `amount` , `type` , `machine_id` , `createtime` , `serial_number` , `goods_list`) VALUES ('1001201911120000001269577311' , 0.01 , 1 , 11000 , 1573560309 , '1573560323' , '[[1,1]]') [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:05:17+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server/notify
+[运行时间：0.207026s] [吞吐率：4.83req/s] [内存消耗：2,605.84kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'notify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:28246',
+  'content-length' => '1712',
+  'user-agent' => 'Apache-HttpClient/4.4.1',
+  'accept-charset' => 'UTF-8',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'response' => 'JF1I-pOqsCG82fCxPFyUW5-nOkQooW-HVBKu_2DQ_5m2984K_nizzj0-4sP2utiElsCuSPMPA2Mv8l1dHhTRtCMY1EOE9KgqLyXuoGFOgJJdECtJybGWeZdDubszFLLioAAYfgK_ja4IH2c-Xy7lBIDhBKrEFeAO1Hyjz4ZqIWr2nv1iTgdaW6elal_gCyu0wp5Lb3uJRBXT-rNG4yvwnqAAjydiU9uR_mMBqLXj25PSON5s48BkChw1DwwXzPwXywTII3nBzOL-nRCFSXtEM5zcm0TSk3MvDAnIjPWCVqyNzzMAp0Vwfo6R9IsE-rFzVjy-Q_R9lroTAjC97SgjMg$dkiZ38u5NPLQ4jMc_WBNwlo6RCS2qqUmVeC1OePypY3Voqs813ALKzUn4vDr_pHLUyqqtB_ohtbsa3aGuW3e7RA4Jio6BAaoMpSDEtWos9cm5X10S9KLjb23YLAuVPnJgn5Kx5du5KuMeq616GA9jLOQNS-gZrymtZHOhaFyRC-_Sd3ycYMtpx_6KsGBGf-AOzSHqo0Ef7Tcwfx341rZgzuXjzIN7hxIyw-Fy7IyxWOnY9zKUb9D1gZ0pT185QXZ-e4sh1ir_G02aCQnhOQsoNt0MCnB8NKlJ0JmqfM6SErapkH3NZ0VLeAf5-3W2F6LEwwcLP4h6Xoy8XQ2EXTePXcLV4WFJ6ei0YD096Itn7jIKnB_bQtiRVcGrKnq6cGXXUeQmpmJC0RWcA4vXuVg2A5oIotv1y-0dJsxGatcpqALbVgr9HT9LW-qE0vJo1wsbMeB5qY2q5Ugce3bhJM4QQ3PQNizcKnRRsknVaa9H2TZjcQZ0VAAv90zrLXXblT_NjLzysSY8xQ_bimd3sPtaB2Sm6Z2bwQjD3bf9iCrMtJSb9esvq_1Atevn8sMfMNNywv2okasq6hfuCU5acfqMFTi_7Zb6vBhI-7KKNfALAVponmi8VY2TRIS5_ElrL5grJvjEYNRHTZovVLTBJnHHb3SwBvT2wEctAo4KhnuUUloiI_S7pdLH4ujRSJD_heh9Cd3Xo-n4038oDI7vBSclkevNZuAj8MJkZoOLQVa5C-LnO-zlb9lchbVtx-B_JMf_5iMxVETc12r4VTXlYjLIbybiMgvtj2l5oiyMjCD-3ps9EIElVH4JIrotGhw3tDVvPXEjQLiXulIb-inpP8yIuIH2Lq5mloC-YgRmw0LWb3FDWqJ4kY1ef5IxQFvlTP6VLZKju4HiJlxX1M73y0cvTQBRh0cApc-h9_POQo66kyQlzxHE3xZWJF7i7FAnUwmkNrSF_5r-UTjTfB8zCHXCetfxwTLovcAo2K88S040VBUZmIObo0nQ8HfpFOuL645X-L6JXg2P5H7qDqkxktGJ4Y_eeSegvOvh-1jOc1ztXF3bxT8y4tZ1cuIhxhlb86y-n8rTr78Tgu509DZr46Rg7kpoLi1uUofuzHIYSGCtmbh5WaffBL8iJDO9bAMTcV241IGIDbWUYDXLFk0HNxYVZShsRF3XDRM3Rowg_ExpUWbN0S1OOLn8rWb5_YZeA6r3MUgk7-yK-1c2BkgI60QRXr39PI_BDIYm1wQhkqYvq1ZCReJNm8cRtXcnuaZXG2ClFL9qpzBomRHxJgrxV6AJQ$AES$SHA256',
+  'customerIdentification' => 'OPR:10026912451',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->notify[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_order` [ RunTime:0.056007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `unique_order_id` = '1001201911120000001269577311' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_order`  SET `status`=1,`paytime`=1573560317  WHERE  `unique_order_id` = '1001201911120000001269577311' [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_day_statistics` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_day_statistics`  SET `online_income`=`online_income`+0.01  WHERE  `machine_id` = 11000  AND `stat_period` = 1573488000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_order` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_conf` WHERE  `goods_id` = 1  AND `machine_id` = 11000  AND `number` >= 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine_conf`  SET `number`=`number`-1  WHERE  `id` = 9 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:05:17+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.032004s] [吞吐率：31.25req/s] [内存消耗：2,032.79kb] [文件加载：116]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '69',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-12T20:05:18+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.087511s] [吞吐率：11.43req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.011502s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.027503s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:05:23+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.203526s] [吞吐率：4.91req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.1',
+      'ts' => 1573560339,
+    ),
+    'O' => 'A53663C39E1F92EE75DE399C47677749EA439221',
+  ),
+  'ip' => '123.125.5.211:65158',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.007000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.049506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.1',`last_online`=1573560323,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.043005s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.033004s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:05:37+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.119015s] [吞吐率：8.40req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.016502s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004001s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.041005s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:09:10+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.112014s] [吞吐率：8.93req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002001s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.036504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:09:11+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.138518s] [吞吐率：7.22req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.2',
+      'ts' => 1573560566,
+    ),
+    'O' => 'BC393779BA03E133BCB9F1478EE23B5529C9DF35',
+  ),
+  'ip' => '123.125.5.211:65258',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.028504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.2',`last_online`=1573560551,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:09:12+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.097512s] [吞吐率：10.26req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.054007s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:09:17+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.258033s] [吞吐率：3.88req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.037005s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.058508s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.043005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:09:17+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.153520s] [吞吐率：6.51req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.2',
+      'ts' => 1573560572,
+    ),
+    'O' => '45CDB869B49D0E5A0B433830F415F6DAE6B954CD',
+  ),
+  'ip' => '123.125.5.211:65262',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.021503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.2',`last_online`=1573560557,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.025004s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.054006s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:09:18+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.101513s] [吞吐率：9.85req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.056507s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-12T20:10:09+08:00 ] 192.168.1.101 POST 192.168.1.144:9999/api/server/register
+[运行时间：0.244531s] [吞吐率：4.09req/s] [内存消耗：2,629.18kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.028003s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.144:9999',
+  'connection' => 'close',
+  'expect' => '100-continue',
+  'content-length' => '40',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  '{"uuid":"123456","px":"22","type_id":10}' => '',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\api\controller\Server->register[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.100513s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.002500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_check` [ RunTime:0.040506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine_check` WHERE  `uuid` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:10:10+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.252532s] [吞吐率：3.96req/s] [内存消耗：2,647.41kb] [文件加载：123]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009501s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '176',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'receive_message',
+  'msg' => 
+  array (
+    'C' => 'lg',
+    'P' => 
+    array (
+      'sn' => 11000,
+      'sv' => 'V1.0.20191112.2',
+      'ts' => 1573560625,
+    ),
+    'O' => '5901589EEE8A22CE68B550A8D29C435459E64D84',
+  ),
+  'ip' => '123.125.5.211:65362',
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003500s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014502s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.072509s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_machine` WHERE  `machine_id` = 11000 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `fa_machine`  SET `position_lng`=NULL,`position_lat`=NULL,`address`=NULL,`soft_version`='V1.0.20191112.2',`last_online`=1573560610,`is_online`=1  WHERE  `machine_id` = 11000 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine_conf` [ RunTime:0.047506s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `fa_machine_conf` WHERE  `machine_id` = 11000 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_client_goods` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 1 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `goods_price` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT SUM(number) AS tp_sum FROM `fa_machine_conf` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT `updatetime` FROM `fa_client_goods` WHERE  `goods_id` = 4 LIMIT 1 [ RunTime:0.001500s ]
+---------------------------------------------------------------
+[ 2019-11-12T20:10:11+08:00 ] 192.168.1.144 POST liujunfeng.imwork.net:28246/api/server
+[运行时间：0.079010s] [吞吐率：12.66req/s] [内存消耗：2,666.64kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\last\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'server',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'content-length' => '47',
+  'user-agent' => 'Go-http-client/1.1',
+  'host' => 'liujunfeng.imwork.net:28246',
+)
+[ info ] [ PARAM ] array (
+  'msgtype' => 'connection_lost',
+  'machinesn' => 11000,
+)
+[ info ] [ LANG ] D:\WWW\last\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ RUN ] app\api\controller\Server->index[ D:\WWW\last\application\api\controller\Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=last;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_machine` [ RunTime:0.030004s ]
+[ error ] [0]数据表字段不存在:[last_login][D:\WWW\last\thinkphp\library\think\db\Builder.php:115]

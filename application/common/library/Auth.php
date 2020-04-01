@@ -195,10 +195,11 @@ class Auth
      */
     public function login($account, $password)
     {
-        $field = Validate::is($account, 'email') ? 'email' : (Validate::regex($account, '/^1\d{10}$/') ? 'mobile' : 'username');
+
+        $field = 'username';
         $user = User::get([$field => $account]);
         if (!$user) {
-            $this->setError('Account is incorrect');
+            $this->setError('账户不存在');
             return false;
         }
 
@@ -298,12 +299,13 @@ class Auth
                 //记录本次登录的IP和时间
                 $user->loginip = $ip;
                 $user->logintime = $time;
-
+                $token = Random::uuid();
+                $user->token = $token;
                 $user->save();
 
                 $this->_user = $user;
 
-                $this->_token = Random::uuid();
+                $this->_token = $token;
                 Token::set($this->_token, $user->id, $this->keeptime);
 
                 $this->_logined = true;
@@ -350,7 +352,9 @@ class Auth
      */
     public function isLogin()
     {
+
         if ($this->_logined) {
+//
             return true;
         }
         return false;
@@ -370,10 +374,20 @@ class Auth
      */
     public function getUserinfo()
     {
+
         $data = $this->_user->toArray();
         $allowFields = $this->getAllowFields();
         $userinfo = array_intersect_key($data, array_flip($allowFields));
-        $userinfo = array_merge($userinfo, Token::get($this->_token));
+        $userinfo = array_merge($userinfo, Token::get($this->_token));//data.userinfo
+
+        $org_level = DB::name('user')->where('id',$userinfo['id'])->value('org_level');
+        $rule_id = DB::name('user')->where('id',$userinfo['id'])->value('rule_id');
+        $rule = DB::name('client_rule')->where('id',$rule_id)->value('auth_ids');
+        $auth = DB::name('client_auth')->where("id","in",$rule)->select();
+        $userinfo['auth'] = $auth;
+
+
+
         return $userinfo;
     }
 
@@ -383,10 +397,13 @@ class Auth
      */
     public function getRuleList()
     {
+
         if ($this->rules) {
+
             return $this->rules;
         }
         $group = $this->_user->group;
+
         if (!$group) {
             return [];
         }

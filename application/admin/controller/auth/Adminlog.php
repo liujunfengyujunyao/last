@@ -60,7 +60,6 @@ class Adminlog extends Backend
             return json($result);
         }
         return $this->view->fetch();
-//        return $this->fetch();
     }
 
     /**

@@ -11,6 +11,7 @@ use think\Lang;
 use think\Loader;
 use think\Request;
 use think\Response;
+use think\Route;
 
 /**
  * API控制器基类
@@ -90,6 +91,25 @@ class Api
      */
     protected function _initialize()
     {
+        if (Config::get('url_domain_deploy')) {
+            $domain = Route::rules('domain');
+            if (isset($domain['api'])) {
+                if (isset($_SERVER['HTTP_ORIGIN'])) {
+                    header("Access-Control-Allow-Origin: " . $this->request->server('HTTP_ORIGIN'));
+                    header('Access-Control-Allow-Credentials: true');
+                    header('Access-Control-Max-Age: 86400');
+                }
+                if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+                    if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD'])) {
+                        header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+                    }
+                    if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS'])) {
+                        header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");
+                    }
+                }
+            }
+        }
+
         //移除HTML标签
         $this->request->filter('trim,strip_tags,htmlspecialchars');
 
@@ -101,7 +121,7 @@ class Api
 
         // token
         $token = $this->request->server('HTTP_TOKEN', $this->request->request('token', \think\Cookie::get('token')));
-
+//halt($token);
         $path = str_replace('.', '/', $controllername) . '/' . $actionname;
         // 设置当前请求的URI
         $this->auth->setRequestUri($path);
@@ -110,7 +130,7 @@ class Api
             //初始化
             $this->auth->init($token);
             //检测是否登录
-            if (!$this->auth->isLogin()) {
+            if (!$this->auth->isLogin()) {//common/librart/auth
                 $this->error(__('Please login first'), null, 401);
             }
             // 判断是否需要验证权限

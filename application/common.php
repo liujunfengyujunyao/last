@@ -1,5 +1,5 @@
 <?php
-
+use think\Db;
 // 公共助手函数
 
 if (!function_exists('__')) {
@@ -362,35 +362,233 @@ if (!function_exists('hsv2rgb')) {
         ];
     }
 }
-if (!function_exists('post_curls')) {
-
-    function post_curls($url, $post)
-    {
-        $post = json_encode($post,320);
-        $curl = curl_init(); // 启动一个CURL会话
-        curl_setopt($curl, CURLOPT_URL, $url); // 要访问的地址
-        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0); // 对认证证书来源的检查
-        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 1); // 从证书中检查SSL加密算法是否存在
-        curl_setopt($curl, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']); // 模拟用户使用的浏览器
-        curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1); // 使用自动跳转
-        curl_setopt($curl, CURLOPT_AUTOREFERER, 1); // 自动设置Referer
-        curl_setopt($curl, CURLOPT_POST, 1); // 发送一个常规的Post请求
-        curl_setopt($curl, CURLOPT_POSTFIELDS, $post); // Post提交的数据包
-        curl_setopt($curl, CURLOPT_TIMEOUT, 30); // 设置超时限制防止死循环
-        curl_setopt($curl, CURLOPT_HEADER, 0); // 显示返回的Header区域内容
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); // 获取的信息以文件流的形式返回
-        $res = curl_exec($curl); // 执行操作
-        if (curl_errno($curl)) {
-            echo 'Errno'.curl_error($curl);//捕抓异常
+function httpStatus($num){//网页返回码
+    static $http = array (
+        100 => "HTTP/1.1 100 Continue",
+        101 => "HTTP/1.1 101 Switching Protocols",
+        200 => "HTTP/1.1 200 OK",
+        201 => "HTTP/1.1 201 Created",
+        202 => "HTTP/1.1 202 Accepted",
+        203 => "HTTP/1.1 203 Non-Authoritative Information",
+        204 => "HTTP/1.1 204 No Content",
+        205 => "HTTP/1.1 205 Reset Content",
+        206 => "HTTP/1.1 206 Partial Content",
+        300 => "HTTP/1.1 300 Multiple Choices",
+        301 => "HTTP/1.1 301 Moved Permanently",
+        302 => "HTTP/1.1 302 Found",
+        303 => "HTTP/1.1 303 See Other",
+        304 => "HTTP/1.1 304 Not Modified",
+        305 => "HTTP/1.1 305 Use Proxy",
+        307 => "HTTP/1.1 307 Temporary Redirect",
+        400 => "HTTP/1.1 400 Bad Request",
+        401 => "HTTP/1.1 401 Unauthorized",
+        402 => "HTTP/1.1 402 Payment Required",
+        403 => "HTTP/1.1 403 Forbidden",
+        404 => "HTTP/1.1 404 Not Found",
+        405 => "HTTP/1.1 405 Method Not Allowed",
+        406 => "HTTP/1.1 406 Not Acceptable",
+        407 => "HTTP/1.1 407 Proxy Authentication Required",
+        408 => "HTTP/1.1 408 Request Time-out",
+        409 => "HTTP/1.1 409 Conflict",
+        410 => "HTTP/1.1 410 Gone",
+        411 => "HTTP/1.1 411 Length Required",
+        412 => "HTTP/1.1 412 Precondition Failed",
+        413 => "HTTP/1.1 413 Request Entity Too Large",
+        414 => "HTTP/1.1 414 Request-URI Too Large",
+        415 => "HTTP/1.1 415 Unsupported Media Type",
+        416 => "HTTP/1.1 416 Requested range not satisfiable",
+        417 => "HTTP/1.1 417 Expectation Failed",
+        500 => "HTTP/1.1 500 Internal Server Error",
+        501 => "HTTP/1.1 501 Not Implemented",
+        502 => "HTTP/1.1 502 Bad Gateway",
+        503 => "HTTP/1.1 503 Service Unavailable",
+        504 => "HTTP/1.1 504 Gateway Time-out"
+    );
+    header($http[$num]);
+    exit();
+}
+        //foreach遍历后unset删除
+        function delByValue($arr, $value)
+        {
+            if(!is_array($arr)){
+                return $arr;
+            }
+            foreach($arr as $k=>$v){
+                if($v == $value){
+                    unset($arr[$k]);
+                }
+            }
+            return $arr;
         }
-        curl_close($curl); // 关闭CURL会话
-        return $res; // 返回数据，json格式
 
+function post_curls($url, $post)
+{
+    $post = json_encode($post,320);
+    $curl = curl_init(); // 启动一个CURL会话
+    curl_setopt($curl, CURLOPT_URL, $url); // 要访问的地址
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0); // 对认证证书来源的检查
+    curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2); // 从证书中检查SSL加密算法是否存在
+    curl_setopt($curl, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']); // 模拟用户使用的浏览器
+    curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1); // 使用自动跳转
+    curl_setopt($curl, CURLOPT_AUTOREFERER, 1); // 自动设置Referer
+    curl_setopt($curl, CURLOPT_POST, 1); // 发送一个常规的Post请求
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $post); // Post提交的数据包
+    curl_setopt($curl, CURLOPT_TIMEOUT, 30); // 设置超时限制防止死循环
+    curl_setopt($curl, CURLOPT_HEADER, 0); // 显示返回的Header区域内容
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); // 获取的信息以文件流的形式返回
+    $res = curl_exec($curl); // 执行操作
+    if (curl_errno($curl)) {
+        echo 'Errno'.curl_error($curl);//捕抓异常
+    }
+    curl_close($curl); // 关闭CURL会话
+    return $res; // 返回数据，json格式
+}
+
+function ror($order_id)
+{
+    $order = DB::name('order')->where('id',$order_id)->find();//假设一个订单
+//    $data = [
+//        [1,8],
+//        [2,11],
+//    ];
+    $data = json_decode($order['goods_list'],true);
+
+    $remainder = 0;//数组多余元素
+    foreach($data as $key => $value){
+        $conf = DB::name('machine_conf')
+            ->where('goods_id',$value[0])
+            ->where('machine_id',$order['machine_id'])
+            ->where('number','>=',$value[1])
+            ->find();
+
+        if($conf){//如果一个仓位可以将货全部出出
+
+            DB::name('machine_conf')
+                ->where('id',$conf['id'])
+                ->setDec('number',$value[1]);
+
+
+            //添加到商品售卖日志
+
+            $goods_price = DB::name('client_goods')->where('goods_id',$value[0])->value('goods_price');
+
+
+            $add = [
+                'goods_id' => $value[0],
+                'number'   => $value[1],
+                'time'     => time(),
+                'machine_id' => $order['machine_id'],
+                'amount'   => $goods_price * $value[1],
+            ];
+
+            DB::name('goods_statistics')->insert($add);
+
+            $result[$remainder] = [
+                'ri' => $conf['location'],
+                'pm' => $conf['lat'] . ',' . $conf['lng'],
+                'num' => $value[1],
+                'gi' => $conf['goods_id']
+            ];
+            $remainder++;
+//            halt(131);
+        }else{
+            for($a=0;$a<100;$a++){
+                $machine_conf = DB::name('machine_conf')
+                    ->where('goods_id',$value[0])
+                    ->where('machine_id',$order['machine_id'])
+                    ->where('number','>',0)
+                    ->find();
+                if($machine_conf['number']>=$value[1]){//够了  终止循环 开始下个商品遍历
+                    DB::name('machine_conf')
+                        ->where('id',$machine_conf['id'])
+                        ->setDec('number',$value[1]);
+                    $add = [
+                        'machine_id' => $order['machine_id'],
+                        'goods_id'   => $value[0],
+                        'number'     => $value[1],
+                        'time'       => time(),
+                        'amount'   => DB::name('client_goods')->where('goods_id',$value)->value('goods_price') * $value[1],
+                    ];
+                    DB::name('goods_statistics')->insert($add);
+                    $result[$remainder] = [
+                        'ri' => $machine_conf['location'],
+                        'pm' => $machine_conf['lat'] . ',' . $machine_conf['lng'],
+                        'num' => $value[1],
+                        'gi' => $machine_conf['location']
+                    ];
+                    $remainder++;
+                    break;
+                }else{
+                    $for_conf = DB::name('machine_conf')
+                        ->where('goods_id',$value[0])
+                        ->where('machine_id',$order['machine_id'])
+                        ->where('number','>',0)
+                        ->find();
+//                        dump($for_conf);
+                    DB::name('machine_conf')
+                        ->where('id',$for_conf['id'])
+                        ->setDec('number',$for_conf['number']);
+                    $add = [
+                        'machine_id' => $order['machine_id'],
+                        'goods_id'   => $value[0],
+                        'number'     => $for_conf['number'],
+                        'time'       => time(),
+                        'amount'   => DB::name('client_goods')->where('goods_id',$value)->value('goods_price') * $value[1],
+                    ];
+                    DB::name('goods_statistics')->insert($add);
+
+                    $value[1] = $value[1] - $for_conf['number'];
+
+                    $result[$remainder] = [
+                        'ri' => $machine_conf['location'],
+                        'pm' => $machine_conf['lat'] . ',' . $machine_conf['lng'],
+                        'num' => $machine_conf['number'],
+                        'gi' => $machine_conf['goods_id']
+                    ];
+                    $remainder++;
+                    continue;
+                }
+            }
+            continue;
+        }
+    }
+
+    return $result;
+}
+function xml_to_array( $xml )
+{
+    $reg = "/<(\\w+)[^>]*?>([\\x00-\\xFF]*?)<\\/\\1>/";
+    if(preg_match_all($reg, $xml, $matches))
+    {
+        $count = count($matches[0]);
+        $arr = array();
+        for($i = 0; $i < $count; $i++)
+        {
+            $key = $matches[1][$i];
+            $val = xml_to_array( $matches[2][$i] );  // 递归
+            if(array_key_exists($key, $arr))
+            {
+                if(is_array($arr[$key]))
+                {
+                    if(!array_key_exists(0,$arr[$key]))
+                    {
+                        $arr[$key] = array($arr[$key]);
+                    }
+                }else{
+                    $arr[$key] = array($arr[$key]);
+                }
+                $arr[$key][] = $val;
+            }else{
+                $arr[$key] = $val;
+            }
+        }
+        return $arr;
+    }else{
+        return $xml;
     }
 }
-if (!function_exists('json_curl')) {
-function json_curl($url, $para ){
 
+function json_curl($url, $para ){
     $data_string=json_encode($para,JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
@@ -402,96 +600,81 @@ function json_curl($url, $para ){
     $result = curl_exec($curl);
     curl_close($curl);
     return $result;
-    }
 }
 
-if (!function_exists('json_curl')) {
-    function decrypt($source, $private_Key, $public_Key)
-    {
+function decrypt($source,$private_Key, $public_Key)
+{
 
-        $private_key = "-----BEGIN RSA PRIVATE KEY-----\n" .
-            wordwrap($private_Key, 64, "\n", true) .
-            "\n-----END RSA PRIVATE KEY-----";
+    $private_key = "-----BEGIN RSA PRIVATE KEY-----\n" .
+        wordwrap($private_Key, 64, "\n", true) .
+        "\n-----END RSA PRIVATE KEY-----";
 
-        extension_loaded('openssl') or die('php需要openssl扩展支持');
-
-
-        /* 提取私钥 */
-        $privateKey = openssl_get_privatekey($private_key);
-
-        ($privateKey) or die('密钥不可用');
+    extension_loaded('openssl') or die('php需要openssl扩展支持');
 
 
-        //分解参数
-        $args = explode('$', $source);
+    /* 提取私钥 */
+    $privateKey = openssl_get_privatekey($private_key);
+
+    ($privateKey) or die('密钥不可用');
 
 
-        if (count($args) != 4) {
-            return 'source invalid : ';
-        }
-
-        $encryptedRandomKeyToBase64 = $args[0];
-        $encryptedDataToBase64 = $args[1];
-        $symmetricEncryptAlg = $args[2];
-        $digestAlg = $args[3];
-
-        //用私钥对随机密钥进行解密
-        openssl_private_decrypt(base64_decode(strtr($encryptedRandomKeyToBase64, '-_', '+/')), $randomKey, $privateKey);
+    //分解参数
+    $args = explode('$', $source);
 
 
-        openssl_free_key($privateKey);
+    if (count($args) != 4) {
+        return 'source invalid : ';
+    }
+
+    $encryptedRandomKeyToBase64 = $args[0];
+    $encryptedDataToBase64 = $args[1];
+    $symmetricEncryptAlg = $args[2];
+    $digestAlg = $args[3];
+
+    //用私钥对随机密钥进行解密
+    openssl_private_decrypt(base64_decode(strtr($encryptedRandomKeyToBase64, '-_', '+/')), $randomKey, $privateKey);
 
 
-        $encryptedData = openssl_decrypt(base64_decode(strtr($encryptedDataToBase64, '-_', '+/')), "AES-128-ECB", $randomKey, OPENSSL_RAW_DATA);
+    openssl_free_key($privateKey);
 
 
-        //分解参数
-        $signToBase64 = substr(strrchr($encryptedData, '$'), 1);
-        $sourceData = substr($encryptedData, 0, strlen($encryptedData) - strlen($signToBase64) - 1);
-
-        $public_key = "-----BEGIN PUBLIC KEY-----\n" .
-            wordwrap($public_Key, 64, "\n", true) .
-            "\n-----END PUBLIC KEY-----";
+    $encryptedData = openssl_decrypt(base64_decode(strtr($encryptedDataToBase64, '-_', '+/')), "AES-128-ECB", $randomKey, OPENSSL_RAW_DATA);
 
 
-        $publicKey = openssl_pkey_get_public($public_key);
+    //分解参数
+    $signToBase64=substr(strrchr($encryptedData,'$'),1);
+    $sourceData = substr($encryptedData,0,strlen($encryptedData)-strlen($signToBase64)-1);
 
-        $res = openssl_verify($sourceData, base64_decode(strtr($signToBase64, '-_', '+/')), $publicKey, $digestAlg); //验证
+    $public_key = "-----BEGIN PUBLIC KEY-----\n" .
+        wordwrap($public_Key, 64, "\n", true) .
+        "\n-----END PUBLIC KEY-----";
 
-        openssl_free_key($publicKey);
 
-        //输出验证结果，1：验证成功，0：验证失败
-        if ($res == 1) {
-            return $sourceData;
-        } else {
-            return "verifySign fail!";
-        }
+
+    $publicKey = openssl_pkey_get_public($public_key);
+
+    $res = openssl_verify($sourceData,base64_decode(strtr($signToBase64, '-_', '+/')), $publicKey,$digestAlg); //验证
+
+    openssl_free_key($publicKey);
+
+    //输出验证结果，1：验证成功，0：验证失败
+    if ($res == 1) {
+        return $sourceData;
+    } else {
+        return "verifySign fail!";
     }
 }
-if (!function_exists('json_curl')) {
-    function QRcode($url)
-    {
-        vendor('phpqrcode.phpqrcode');
-        $object = new \QRcode();
-        ob_end_clean();
-        $object->png($url, false, 3, 10, 2);
-        exit();
-
-    }
+function get_this_month(){
+    $y = date("Y", time()); //年
+    $m = date("m", time()); //月
+    $d = date("d", time()); //日
+    $t0 = date('t'); // 本月一共有几天
+    $r=array();
+    $r['start_month'] = mktime(0, 0, 0, $m, 1, $y); // 创建本月开始时间
+    $r['end_month'] = mktime(23, 59, 59, $m, $t0, $y); // 创建本月结束时间
+    return $r;
 }
 
-if (!function_exists('json_curl')) {
-    function create_qrcode($url)
-    {
-        vendor("phpqrcode.phpqrcode");
-        $data = $url;
-        $outfile = ROOT_PATH . "public/qrcode/" . time() . '.jpg';
-        $level = 'L';
-        $size = 4;
-        $QRcode = new \QRcode();
-        ob_start();
-        $QRcode->png($data, $outfile, $level, $size, 2);
-        ob_end_clean();
-        return time();
-    }
-}
+
+
+
